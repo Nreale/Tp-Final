@@ -5,14 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build2-css": "node-sass --include-path scss scss/mainV.scss css/mainV.css",
+    "watch2-css": "nodemon -e scss -x \"npm run build2-css\"",
+    "build3-css": "node-sass --include-path scss scss/mainF.scss css/mainF.css",
+    "watch3-css": "nodemon -e scss -x \"npm run build3-css\""
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.7"
-  }
+  },
+  "description": ""
 }

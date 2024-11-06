@@ -1,0 +1,32 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contFut-text-parrafo{
+    background-color: aqua;
+    width: 70%;
+    height: 250px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    .contFut-balon1{
+        height: 100%;
+        width: 350px;
+        background-color: red;
+        margin-left: 20px;
+       
+    }
+    .contFut-parrafo1{
+        background-color: green;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+}
