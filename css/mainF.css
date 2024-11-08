@@ -7,27 +7,31 @@
   padding: 0; }
 
 .contFut-text-parrafo {
-  background-color: beige;
+  background-color: white;
   height: 300px;
   /*margin-left: 15%;*/
   display: flex;
   flex-direction: row;
   border-radius: 12px;
-  border: solid 1px black; }
+  border: solid 1px green;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
   .contFut-text-parrafo .contFut-balon1 {
     height: 100%;
-    width: 400px;
+    width: 450px;
     margin-left: 20px;
     margin-top: 15px; }
   .contFut-text-parrafo .contFut-parrafo1 {
     width: 90%;
     height: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-top: 20px;
+    color: black; }
 
 @media screen and (max-width: 1023px) {
   .contFut-text-parrafo {
@@ -48,22 +52,17 @@
       height: 300px;
       width: 300px; } }
 
-.contFut-padre-salud {
-  background-color: aqua;
-  height: 1000px;
-  width: 100%;
+.contFut-padre-fila1-salud {
+  background-image: url(../assets/imagenes/bombonera.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .contFut-padre-salud .contFut-salud {
-    background-color: red;
-    width: 80%;
-    height: 80%; }
-    .contFut-padre-salud .contFut-salud .contFut-padre-fila1 {
-      width: 100%;
-      height: 300px;
-      background-color: blue; }
-    .contFut-padre-salud .contFut-salud .contFut-imagen-fila1-salud {
-      width: 300px;
-      height: 100%;
-      background-color: green; }
+  .contFut-padre-fila1-salud .contFut-fila1 {
+    background-color: white;
+    height: 300px;
+    border: solid 1px black;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
