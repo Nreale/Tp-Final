@@ -52,17 +52,29 @@
       height: 300px;
       width: 300px; } }
 
-.contFut-padre-fila1-salud {
-  background-image: url(../assets/imagenes/bombonera.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
+.conFut-tarjetas-salud {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  background-color: #cfcdcd;
+  height: 550px;
+  justify-content: space-around;
   align-items: center; }
-  .contFut-padre-fila1-salud .contFut-fila1 {
-    background-color: white;
-    height: 300px;
-    border: solid 1px black;
-    border-radius: 12px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
+  .conFut-tarjetas-salud .tarjeta {
+    background-image: url(../assets/imagenes/bombonera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    border: solid 1px white;
+    border-radius: 10px; }
+    .conFut-tarjetas-salud .tarjeta .contFut-imagen-tarjeta-salud {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud {
+      backdrop-filter: blur(5px);
+      border: solid 1px white; }
+      .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud .contFut-lista-tarjeta-salud {
+        color: black; }
+      .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud .contFut-parrafo-tarjeta-salud {
+        color: black;
+        text-align: center; }
