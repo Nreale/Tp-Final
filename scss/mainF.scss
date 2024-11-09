@@ -18,11 +18,11 @@
     display: flex;
     flex-direction: row;
     border-radius: 12px;
-    border: solid 1px green;
+    border: solid 1px gray;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     .contFut-balon1{
-        height: 100%;
-        width: 450px;
+        height: 90%;
+        width: 400px;
         margin-left: 20px;
         margin-top: 15px;
     }
@@ -64,19 +64,18 @@
     }
 }
 
-.conFut-tarjetas-salud{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(207, 205, 205);
-    height: 550px;
-    justify-content: space-around;
-    align-items: center;
-    
-    .tarjeta{
-        background-image: url(../assets/imagenes/bombonera.png);
+$canchas:(
+    1: url(../assets/imagenes/bombonera.png),
+    2: url(../assets/imagenes/monumental.png),
+    3: url(../assets/imagenes/racing.png),
+);
+
+@each $num, $cancha in $canchas{
+    .tarjeta#{$num}{
+        background-image: $cancha;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 480px;
+        height: 510px;
         border: solid 1px white;
         border-radius: 10px;
        .contFut-imagen-tarjeta-salud{
@@ -96,7 +95,18 @@
                 text-align: center;
             }
         }
-    }   
+    }
+}
+
+
+.conFut-tarjetas-salud{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(207, 205, 205);
+    height: 550px;
+    justify-content: space-around;
+    align-items: center;
+    
 }  
 
 

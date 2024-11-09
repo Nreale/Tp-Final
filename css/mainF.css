@@ -13,11 +13,11 @@
   display: flex;
   flex-direction: row;
   border-radius: 12px;
-  border: solid 1px green;
+  border: solid 1px gray;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
   .contFut-text-parrafo .contFut-balon1 {
-    height: 100%;
-    width: 450px;
+    height: 90%;
+    width: 400px;
     margin-left: 20px;
     margin-top: 15px; }
   .contFut-text-parrafo .contFut-parrafo1 {
@@ -52,6 +52,66 @@
       height: 300px;
       width: 300px; } }
 
+.tarjeta1 {
+  background-image: url(../assets/imagenes/bombonera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  border: solid 1px white;
+  border-radius: 10px; }
+  .tarjeta1 .contFut-imagen-tarjeta-salud {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .tarjeta1 .conFut-text-tarjeta-salud {
+    backdrop-filter: blur(5px);
+    border: solid 1px white; }
+    .tarjeta1 .conFut-text-tarjeta-salud .contFut-lista-tarjeta-salud {
+      color: black; }
+    .tarjeta1 .conFut-text-tarjeta-salud .contFut-parrafo-tarjeta-salud {
+      color: black;
+      text-align: center; }
+
+.tarjeta2 {
+  background-image: url(../assets/imagenes/monumental.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  border: solid 1px white;
+  border-radius: 10px; }
+  .tarjeta2 .contFut-imagen-tarjeta-salud {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .tarjeta2 .conFut-text-tarjeta-salud {
+    backdrop-filter: blur(5px);
+    border: solid 1px white; }
+    .tarjeta2 .conFut-text-tarjeta-salud .contFut-lista-tarjeta-salud {
+      color: black; }
+    .tarjeta2 .conFut-text-tarjeta-salud .contFut-parrafo-tarjeta-salud {
+      color: black;
+      text-align: center; }
+
+.tarjeta3 {
+  background-image: url(../assets/imagenes/racing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  border: solid 1px white;
+  border-radius: 10px; }
+  .tarjeta3 .contFut-imagen-tarjeta-salud {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .tarjeta3 .conFut-text-tarjeta-salud {
+    backdrop-filter: blur(5px);
+    border: solid 1px white; }
+    .tarjeta3 .conFut-text-tarjeta-salud .contFut-lista-tarjeta-salud {
+      color: black; }
+    .tarjeta3 .conFut-text-tarjeta-salud .contFut-parrafo-tarjeta-salud {
+      color: black;
+      text-align: center; }
+
 .conFut-tarjetas-salud {
   display: flex;
   flex-direction: row;
@@ -59,22 +119,3 @@
   height: 550px;
   justify-content: space-around;
   align-items: center; }
-  .conFut-tarjetas-salud .tarjeta {
-    background-image: url(../assets/imagenes/bombonera.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 480px;
-    border: solid 1px white;
-    border-radius: 10px; }
-    .conFut-tarjetas-salud .tarjeta .contFut-imagen-tarjeta-salud {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud {
-      backdrop-filter: blur(5px);
-      border: solid 1px white; }
-      .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud .contFut-lista-tarjeta-salud {
-        color: black; }
-      .conFut-tarjetas-salud .tarjeta .conFut-text-tarjeta-salud .contFut-parrafo-tarjeta-salud {
-        color: black;
-        text-align: center; }
