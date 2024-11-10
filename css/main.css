@@ -3,43 +3,37 @@
   margin: 0; }
 
 /* Header */
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .logo img {
-    height: 120px;
-    width: 120px;
-    margin: 10px 0px 10px 50px; }
-
 #header {
-  padding: 0px;
-  margin: 0px;
-  background-color: #A1BFB6;
-  margin-bottom: 50px; }
+  background-color: #f5e6d7;
+  margin: 0;
+  padding: 0; }
 
-.titulo {
+.logoP, .maslogos {
   display: flex;
   align-items: center; }
-  .titulo h1 {
-    margin: 0px 0px 0px 30px; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
 
-/* Botones Header */
-.contbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.fotoM {
-  height: 65px;
-  width: 120px;
-  margin: 0px 40px 0px 0px; }
-
-.logos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row; }
-  .logos #icono1 {
-    height: 50px;
-    width: 50px; }
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px;
+      transform: translate(1.1, 1.1px); }
+    .maslogos button p {
+      font-size: 20px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
