@@ -119,3 +119,24 @@
   height: 550px;
   justify-content: space-around;
   align-items: center; }
+
+.contFut-grande-mapa {
+  height: 500px;
+  display: flex;
+  justify-content: center; }
+  .contFut-grande-mapa h1 {
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center; }
+  .contFut-grande-mapa .linea {
+    width: 70%;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px; }
+  .contFut-grande-mapa .contfut-mapa {
+    height: 500px;
+    display: flex;
+    justify-content: center; }
+    .contFut-grande-mapa .contfut-mapa iframe {
+      width: 80%; }

@@ -110,4 +110,30 @@ $canchas:(
 }  
 
 
- 
+.contFut-grande-mapa{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        font-size: 30px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .linea{
+        width: 70%;
+        height: 3px;
+        background-color: black;
+        border-radius: 50px;
+    }
+    .contfut-mapa{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 80%;
+        }
+    }
+}
