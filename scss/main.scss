@@ -1,53 +1,50 @@
+@import "menu";
+
 *{
-    padding: 0;
-    margin: 0;
-}
-
-/* Header */
-#header{
-    background-color: #f5e6d7;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.logoP{
-    display: flex;
-    align-items: center;
-    img{
-        width: 180px;
-        height: 180px;
-    }
+#body{
+    background: gray;
 }
 
-.maslogos{
-    @extend .logoP;
-    justify-content: space-around;
+.contPrin-carrousel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1000px;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
     
-    img{
-        width: 40px;
-        height: 40px;
-    }
-    .menu{
-        width: 130px;
-        height: 60px;
-    }
+    .contPrin-carrousel-slide{
 
-    button{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border: solid black 1px;
-        &:hover{
-            background: linear-gradient(to right, #0e788d85, #19ffff98);
-            border: solid #25645a 1px;
-            transform: translate(1.1,1.1px);
+        .contPrin-carrousel-slide-fondo{
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 20px;
+            box-shadow: 0 30px 50px #505050;
+            background-position: 50% 50%;
+            background-size: cover;
+            display: inline-block;
+            transition: 0.5s;
         }
-
-        p{
-            font-size: 20px;
-            margin: 4px 0px 6px 5px;
-            color: black;
+        .contPrin-carrousel-slide-fondo:nth-child(1),.contPrin-carrousel-slide-fondo:nth-child(2){
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .contPrin-carrousel-slide-fondo:nth-child(3), .contPrin-carrousel-slide-fondo:nth-child(4), .contPrin-carrousel-slide-fondo:nth-child(4){
+            left: 50%;
         }
     }
 }
