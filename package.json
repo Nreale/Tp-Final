@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/menu.scss css/menu.css",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build2-css": "node-sass --include-path scss scss/mainV.scss css/mainV.css",
     "watch2-css": "nodemon -e scss -x \"npm run build2-css\"",
@@ -13,7 +13,9 @@
     "build4-css": "node-sass --include-path scss scss/mainR.scss css/mainR.css",
     "watch4-css": "nodemon -e scss -x \"npm run build4-css\"",
     "build5-css": "node-sass --include-path scss scss/mainNat.scss css/mainNat.css",
-    "watch5-css": "nodemon -e scss -x \"npm run build5-css\""
+    "watch5-css": "nodemon -e scss -x \"npm run build5-css\"",
+    "build6-css": "node-sass --include-path scss scss/menu.scss css/menu.css",
+    "watch6-css": "nodemon -e scss -x \"npm run build6-css\""
   },
   "author": "",
   "license": "ISC",
