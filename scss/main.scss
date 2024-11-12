@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+#header{
+    background-color: #f5e6d7;
+    margin: 0;
+    padding: 0;
+}
+
+.logoP{
+    display: flex;
+    align-items: center;
+    img{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.maslogos{
+    @extend .logoP;
+    justify-content: space-around;
+    
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    .menu{
+        width: 130px;
+        height: 60px;
+    }
+
+    button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: solid black 1px;
+        &:hover{
+            background: linear-gradient(to right, #0e788d85, #19ffff98);
+            border: solid #25645a 1px;
+            transform: translate(1.1,1.1px);
+        }
+
+        p{
+            font-size: 20px;
+            margin: 4px 0px 6px 5px;
+            color: black;
+        }
+    }
+}
