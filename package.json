@@ -10,8 +10,10 @@
     "watch2-css": "nodemon -e scss -x \"npm run build2-css\"",
     "build3-css": "node-sass --include-path scss scss/mainF.scss css/mainF.css",
     "watch3-css": "nodemon -e scss -x \"npm run build3-css\"",
-    "build4-css": "node-sass --include-path scss scss/mainNat.scss css/mainNat.css",
-    "watch4-css": "nodemon -e scss -x \"npm run build4-css\""
+    
+
+    "build5-css": "node-sass --include-path scss scss/mainNat.scss css/mainNat.css",
+    "watch5-css": "nodemon -e scss -x \"npm run build5-css\""
   },
   "author": "",
   "license": "ISC",
