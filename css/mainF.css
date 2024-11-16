@@ -83,7 +83,9 @@
     border-radius: 15px;
     height: 500px;
     background-color: #262626;
-    transition-duration: 1s; }
+    transition-duration: 1s;
+    display: flex;
+    flex-wrap: wrap; }
     .contenedor-tarjetas .tarjeta .contenedor-imagen {
       width: 100%;
       height: 200px;
@@ -139,4 +141,16 @@
   .tarjeta2 {
     margin-top: 20px; }
   .tarjeta3 {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .contenedor-tarjetas {
+    height: 2200px;
+    display: flex;
+    flex-wrap: wrap; }
+    .contenedor-tarjetas .tarjeta {
+      width: 100%;
+      height: 700px; }
+      .contenedor-tarjetas .tarjeta .contenedor-imagen {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
