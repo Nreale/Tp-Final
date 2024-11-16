@@ -59,104 +59,73 @@
     }
 }
 
-.contFut-text-parrafo{
+.padre{
+    height: 400px;
     background-color: white;
-    height: 300px;
-    /*margin-left: 15%;*/
     display: flex;
-    flex-direction: row;
-    border-radius: 12px;
-    border: solid 1px gray;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    .contFut-balon1{
-        height: 90%;
-        width: 400px;
-        margin-left: 20px;
-        margin-top: 15px;
-    }
-    .contFut-parrafo1{
-        width: 90%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 20px;
-        margin-top: 20px;
-        color: black;
-    }
-}
-
-@media screen and (max-width: 1023px){
-    .contFut-text-parrafo{
-        margin: 0;
-        height: 750px;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        .contFut-balon1{
-            width: 100%;
+    justify-content: center;
+    .cuadrado-fondo{
+        background-color: black;
+        height: 300px;
+        margin-top: 50px;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: rgb(120, 252, 252);
+        }
+        .contenedor-tarjeta{
+            background-color: #f1eded;
             height: 100%;
-            margin: 0;
-            padding: 0;
+            position: relative;
+            right: 15px;
+            bottom: 15px;
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-        }
-        img{
-            height: 300px;
-            width: 300px;
-        }
-    }
-}
-
-$canchas:(
-    1: url(../assets/imagenes/bombonera.png),
-    2: url(../assets/imagenes/monumental.png),
-    3: url(../assets/imagenes/racing.png),
-);
-
-@each $num, $cancha in $canchas{
-    .tarjeta#{$num}{
-        background-image: $cancha;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 510px;
-        border: solid 1px white;
-        border-radius: 10px;
-       .contFut-imagen-tarjeta-salud{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .conFut-text-tarjeta-salud{
-            backdrop-filter: blur(5px);
-            border: solid 1px white;
-            .contFut-lista-tarjeta-salud{
-                color: black;
+            .contenedor-imagen{
+                background-color: red;
+                height: 80%;
+                border-radius: 80%;
             }
-
-            .contFut-parrafo-tarjeta-salud{
-                color: black;
+            .contenedor-parrafo{
                 text-align: center;
+                color: black;
+                font-size: 18px;
+                margin-left: 20px;
+
             }
         }
     }
 }
 
-
-.conFut-tarjetas-salud{
+.contenedor-tarjetas{
+    background-color: #ebe6e6;
+    height: 600px;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(207, 205, 205);
-    height: 550px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    
-}  
-
+    .tarjeta{
+        border-radius: 15px;
+        height: 500px;
+        background-color: #262626;
+        transition-duration: 1s;
+        .contenedor-imagen{
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            background-image: url(../assets/imagenes/bombonera.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:hover{
+            box-shadow: 5px 5px 10px black;
+            border: solid 1px green;
+        }
+    }   
+}
 
 .contFut-grande-mapa{
     height: 500px;
@@ -184,4 +153,36 @@ $canchas:(
             width: 80%;
         }
     }
+}
+
+@media screen and (max-width: 1023px){
+    .padre{
+        height: 800px;
+        .cuadrado-fondo{
+            min-height: 700px;
+            .contenedor-tarjeta{           
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .contenedor-parrafo{
+                    margin-top: 20px;
+                }
+                .contenedor-imagen{
+                    margin-top: 10px;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .tarjeta1{
+        margin-top: 20px;
+    }
+    .tarjeta2{
+        margin-top: 20px;
+    }
+    .tarjeta3{
+        margin-top: 20px;
+    }
+
 }
