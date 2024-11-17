@@ -5,17 +5,17 @@
 
 h1 {
   text-align: center;
-  color: white; }
+  color: red; }
 
 p {
-  color: white; }
+  color: red; }
 
 h2 {
   text-align: center;
   color: white; }
 
 .contvol {
-  background-color: red;
+  background-color: #0004fc;
   height: 450px;
   width: 440px;
   margin-left: 800px;
@@ -29,7 +29,7 @@ h2 {
   text-align: left; }
 
 .contvol-2 {
-  background-color: red;
+  background-color: #0004fc;
   height: 450px;
   width: 440px;
   margin-left: 200px;
@@ -40,7 +40,7 @@ h2 {
   border-radius: 15px; }
 
 .contvol-3 {
-  background-color: red;
+  background-color: #0004fc;
   height: 550px;
   width: 440px;
   margin-left: 800px;
@@ -51,22 +51,12 @@ h2 {
   border-radius: 15px; }
 
 .equipoCH {
-  background-color: aqua;
+  background-color: #0004fc;
   width: 100%;
   margin-top: 15px; }
 
-.CH {
-  margin-right: 50px;
-  border-radius: 100%; }
-
-.p2 {
-  text-align: center;
-  display: inline; }
-
 .equipoEU {
-  width: 50%;
-  margin-left: 300px;
-  margin-top: 15px; }
+  background-color: #0004fc; }
 
 .equipoBR {
   width: 50%;
