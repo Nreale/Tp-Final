@@ -4,7 +4,7 @@
 
 /* Header */
 #header {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   margin: 0;
   padding: 0; }
 
@@ -19,24 +19,71 @@
   justify-content: space-around; }
   .maslogos img {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
   .maslogos .menu {
     width: 130px;
     height: 60px; }
   .maslogos button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border: solid black 1px; }
+    border: solid #0e788d85 1px; }
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
-      border: solid #25645a 1px;
-      transform: translate(1.1, 1.1px); }
+      border: solid #25645a 1px; }
     .maslogos button p {
-      font-size: 20px;
+      font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+#header {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0; }
+
+.logoP, .maslogos {
+  display: flex;
+  align-items: center; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
+
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #0e788d85 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px; }
+    .maslogos button p {
+      font-size: 16px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.parrafoT {
+  color: red; }
 
 * {
   margin: 0;
