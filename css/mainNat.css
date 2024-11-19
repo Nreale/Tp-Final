@@ -48,9 +48,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../assets/imagenes/natP.png);
+  background: url(../assets/imagenes/natP.png) no-repeat center center fixed;
   background-size: cover;
-  width: 100%;
   border-top: 1px solid #0e788d85; }
 
 .contHijo1 {
@@ -70,36 +69,60 @@
     margin: 20px 20px 20px 20px;
     font-size: 20px; }
 
-/* Cards de Gotas */
-.container {
-  position: relative;
+/* Cards Cuadradas */
+.contenedor {
+  margin: 60px 0px 0px 0px;
   display: flex;
+  width: 70%;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 50px 0;
-  gap: 40px 30px; }
+  border-radius: 10px; }
 
-.container .drop {
+.columna1, .columna2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin-top: 40px;
+  gap: 50px; }
+
+.profile-card {
+  width: 280px;
+  height: 350px;
+  background: #fffafa65;
+  border-radius: 10px;
+  border: 1px solid #ffffff25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.profile-card p {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 10px; }
+
+/* Cards de Gotas */
+.drop {
   position: relative;
   width: 350px;
   height: 350px;
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
   transition: 0.5s ease-in-out; }
 
-.container .drop:nth-child(1) {
+.drop:nth-child(1) {
   border-radius: 45% 55% 31% 69% / 49% 45% 55% 51%; }
 
-.container .drop:nth-child(2) {
+.drop:nth-child(2) {
   border-radius: 50% 50% 31% 69% / 66% 36% 64% 34%; }
 
-.container .drop:nth-child(3) {
+.drop:nth-child(3) {
   border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%; }
 
-.container .drop:hover {
+.drop:hover {
   border-radius: 50%; }
 
-.container .drop::before {
+.drop::before {
   content: '';
   position: absolute;
   top: 15%;
@@ -110,7 +133,7 @@
   border-radius: 50%;
   opacity: 0.9; }
 
-.container .drop::after {
+.drop::after {
   content: '';
   position: absolute;
   top: 22%;
@@ -121,7 +144,7 @@
   border-radius: 50%;
   opacity: 0.9; }
 
-.container .drop .content {
+.content {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -130,36 +153,34 @@
   text-align: center;
   padding: 50px;
   gap: 15px; }
+  .content h2 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #eff0f4;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1), inset -2px -5px 10px rgba(255, 255, 255, 0.1), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--clr); }
+  .content a {
+    position: relative;
+    padding: 10px 25px;
+    background: var(--clr);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    opacity: 0.75;
+    transition: 0.5s; }
 
-.container .drop .content h2 {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-color: #eff0f4;
-  border-radius: 50%;
-  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1), inset -2px -5px 10px rgba(255, 255, 255, 0.1), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  color: var(--clr); }
-
-.container .drop .content a {
-  position: relative;
-  padding: 10px 25px;
-  background: var(--clr);
-  text-decoration: none;
-  color: #fff;
-  border-radius: 25px;
-  font-weight: 500;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  opacity: 0.75;
-  transition: 0.5s; }
-
-.container .drop .content a:hover {
+.drop .content a:hover {
   opacity: 1; }
 
-.container .drop .content a::before {
+.drop .content a::before {
   content: '';
   position: absolute;
   top: 8px;
