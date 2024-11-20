@@ -317,6 +317,21 @@
         justify-content: end;
     }
 }*/
+.titulo-princ, .nutricion {
+  width: 100%;
+  height: 75px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .titulo-princ h1, .nutricion h1 {
+    color: white;
+    transition: transform 0.3s ease, text-shadow 0.3s ease; }
+    .titulo-princ h1:hover, .nutricion h1:hover {
+      transform: scale(1.1);
+      text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
+
 .link {
   background-color: #1f1f1f;
   height: 400px;
@@ -420,7 +435,7 @@
   .link .link-imagen-6 {
     box-shadow: 0 0 15px yellow; }
 
-.linea {
+.linea, .linea-2 {
   width: 100%;
   height: 75px;
   background-color: #1f1f1f;
@@ -428,7 +443,7 @@
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #1f1f1f, #878787); }
-  .linea .linea-forma {
+  .linea .linea-forma, .linea-2 .linea-forma {
     background-color: lightgray;
     height: 5px;
     width: 80%; }
