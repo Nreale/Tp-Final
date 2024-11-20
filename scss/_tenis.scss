@@ -1,11 +1,169 @@
 @import "menu";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
+#margen{
+    padding: 0;
+    margin: 0;
+}
 
-.parrafoT{
-    color: red;
+.contenedorTe-imagen1-info1{
+    will-change: filter;
+    background-image: url(../assets/imagenes/tenis1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    filter: grayscale(100%);
+    .contenedorTe-info1{
+        height: 300px;
+        width: 50%;
+        margin-right: 20px;
+        .contenedorTe-info1-h1{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .contenedorTe-info1-p1{
+            height: 250px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+    }
+    &:hover{
+        filter: saturate(200%) grayscale(0%);
+        .contenedorTe-info1{
+            backdrop-filter: blur(5px);
+            border: solid black 1px;
+            border-radius: 12px;
+            .contenedorTe-info1-h1{
+                background-color: #f1eded;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                
+            }
+            .contenedorTe-info1-p1{
+                color: white;
+            }
+        }
+    }
+    
+}
+
+/* mapa */
+
+.contenedorTe-grande-mapa{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contenedorTe-mapa{
+        margin-left: 10px;
+        height: 350px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .contenedorTe-text-mapa{
+        width: auto;
+        height: 200px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .titulo-mapa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+        }
+        .parrafo-mapa{
+            color: black;
+        }
+    }
+
+}
+
+.contenedorTe-grande-tarjetas{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/imagenes/canchatenis.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    .tarjetaTe{
+        background-color: aqua;
+        width: 300px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        .contenedorTe-imagen{
+            width: 100%;
+            height: 150px;
+            background-color: red;
+        }
+        .titulo-tarjetaTe{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .contenedorTe-imagen1-info1{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        .contenedorTe-info1{
+            height: 500px;
+            width: 80%;
+            .contenedorTe-info1-p1{
+                margin-top: 50px;
+                color: black;
+            }
+        }
+    }
+    .contenedorTe-grande-mapa{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        background-color: #ebe6e6;
+        .contenedorTe-mapa{
+            width: 100%;
+            margin-left: 0px;
+        }
+        .contenedorTe-text-mapa{
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+    }
 }
