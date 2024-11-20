@@ -74,19 +74,22 @@ p {
   text-align: center; }
 
 .padre1 {
-  background-color: #ffffff;
+  background-color: #f7f6f6;
   width: 100%;
   border: 90px; }
 
 .padre2 {
   background-color: #ffffff;
-  width: 100%; }
+  width: 99%;
+  border: solid rgba(206, 206, 206, 0.322) 40px;
+  margin-left: 12px;
+  margin-right: 50px; }
 
 .contvol {
   background-color: #fefdff;
   height: 450px;
   width: 440px;
-  margin-left: 800px;
+  margin-left: 700px;
   margin-top: 15px;
   border-radius: 10%;
   transition: transform 0.3 ease; }
@@ -103,9 +106,9 @@ p {
 
 .contvol-3 {
   background-color: #ffffff;
-  height: 550px;
+  height: 690px;
   width: 440px;
-  margin-left: 800px;
+  margin-left: 750px;
   margin-top: 15px;
   border-radius: 6%; }
 
@@ -137,7 +140,8 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-radius: 100%; }
 
 .jugadores {
   text-align: center; }
