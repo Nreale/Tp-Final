@@ -42,13 +42,16 @@
             text-align: center;
             display: flex;
             align-items: center;
+            text-shadow: 2px 2px 5px gray;
+
+            
         }
         
     }
     &:hover{
         filter: saturate(200%) grayscale(0%);
         .contenedorTe-info1{
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             border: solid black 1px;
             border-radius: 12px;
             .contenedorTe-info1-h1{
@@ -92,11 +95,6 @@
         height: 90%;
         display: flex;
         flex-direction: column;
-        .contenedorTe-imagen{
-            width: 100%;
-            height: 150px;
-            
-        }
         .titulo-tarjetaTe{
             width: 100%;
             height: 50px;
@@ -109,6 +107,7 @@
             
         }
         .parrafo-tarjetaTe{
+            margin-top: 60px;
             width: 100%;
             height: 100px;
             p{
@@ -119,22 +118,8 @@
     &:hover{
         filter: saturate(200%) grayscale(0%);
         .tarjetaTe{
-            backdrop-filter: blur(5px);
+            background-color: rgb(255, 255, 255);
             border: solid black 1px;
-        }
-        $imagenesB:(
-            1: url(../assets/imagenes/cardiovascular.png),
-            2: url(../assets/imagenes/saludmental.png),
-            3: url(../assets/imagenes/grasacorporal.png),
-        );
-        @each $num, $imagen in $imagenesB{
-            .contenedorTe-imagen-#{$num}{
-                background-image: $imagen;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                height: 150px;
-            }
             .titulo-tarjetaTe{
                 background-color: #ebe6e6;
                 h1{
@@ -145,11 +130,14 @@
             .parrafo-tarjetaTe{
                 p{
                     font-size: 16px;
-                    color: white;
+                    color: black;
+                    
                 }
             }
 
         }
+        
+
     
     }
     
@@ -190,6 +178,8 @@
         }
         .parrafo-mapa{
             color: black;
+            
+
         }
     }
 
@@ -226,6 +216,7 @@
         width: 100%;
         margin-top: 50px;
         background-color: #ebe6e6;
+        flex-wrap: wrap;
         .contenedorTe-mapa{
             width: 100%;
             margin-left: 0px;
