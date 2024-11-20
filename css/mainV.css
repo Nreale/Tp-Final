@@ -141,7 +141,7 @@ p {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
-  border-radius: 100%; }
+  border-radius: 60%; }
 
 .jugadores {
   text-align: center; }
