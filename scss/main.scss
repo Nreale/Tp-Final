@@ -13,11 +13,95 @@
 }
 
 /*link a deportes1*/
+/*.link{
+
+    .link-1{
+        height: 200px;
+        width: 100%;
+        background-color: #1f1f1f;
+        display: flex;
+        align-items: center;
+        .link-imagenes{
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+            width: 25%;
+            /*box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+            img{
+                height: 150px;
+                width: 150px;
+                box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+            }
+        }
+    }
+    .link-2{
+        @extend .link-1;
+        justify-content: start;
+    }
+    .link-3{
+        @extend .link-1;
+        justify-content: end;
+    }
+}*/
+
+$margenes2:(
+    1: 175px,
+    2: 100px,
+    3: 50px,
+    4: 50px,
+    5: 100px,
+    6: 175px,
+);
 
 .link{
-    height: 700px;
+    background-color: #1f1f1f;
+    height: 350px;
     width: 100%;
-    background-color: rgb(255, 0, 43);
+    display: flex;
+    justify-content: space-around;
+    @each $num, $margen2 in $margenes2{
+        .link-imagen-#{$num}{
+            margin-top: $margen2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 150px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+            img{
+                height: 150px;
+                width: 150px;
+            }
+            
+        }
+    }
+}
+
+
+$margenes:(
+    1: -50px,
+    2: 45px,
+    3: -40px,
+);
+
+
+
+.cont-decoracion{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @each $num, $margen in $margenes{
+        .imagen#{$num}{
+            height: 100px;
+            width: 100px;
+            margin: $margen 0px 0px 0px;
+            transition: transform 0.5s ease;
+            &:hover{
+                transform: rotate(30deg);
+            }
+        }
+    }
 }
 
 #margen{
@@ -88,6 +172,16 @@ $margenes:(
         height: 300px;
         h1{
             margin-bottom: 20px;
+        }
+    }
+
+    .link{
+        height: 1000px;
+        @each $num, $margen2 in $margenes2{
+            .link-imagen-#{$num}{
+                margin-top: 20px;
+                
+            }
         }
     }
 }
