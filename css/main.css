@@ -115,11 +115,12 @@
       font-size: 20px;
       text-align: center;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      text-shadow: 2px 2px 5px gray; }
   .contenedorTe-imagen1-info1:hover {
     filter: saturate(200%) grayscale(0%); }
     .contenedorTe-imagen1-info1:hover .contenedorTe-info1 {
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(10px);
       border: solid black 1px;
       border-radius: 12px; }
       .contenedorTe-imagen1-info1:hover .contenedorTe-info1 .contenedorTe-info1-h1 {
@@ -154,9 +155,6 @@
     height: 90%;
     display: flex;
     flex-direction: column; }
-    .contenedorTe-grande-tarjetas .tarjetaTe .contenedorTe-imagen {
-      width: 100%;
-      height: 150px; }
     .contenedorTe-grande-tarjetas .tarjetaTe .titulo-tarjetaTe {
       width: 100%;
       height: 50px;
@@ -166,6 +164,7 @@
       .contenedorTe-grande-tarjetas .tarjetaTe .titulo-tarjetaTe h1 {
         font-size: 0px; }
     .contenedorTe-grande-tarjetas .tarjetaTe .parrafo-tarjetaTe {
+      margin-top: 60px;
       width: 100%;
       height: 100px; }
       .contenedorTe-grande-tarjetas .tarjetaTe .parrafo-tarjetaTe p {
@@ -173,50 +172,16 @@
   .contenedorTe-grande-tarjetas:hover {
     filter: saturate(200%) grayscale(0%); }
     .contenedorTe-grande-tarjetas:hover .tarjetaTe {
-      backdrop-filter: blur(5px);
+      background-color: white;
       border: solid black 1px; }
-    .contenedorTe-grande-tarjetas:hover .contenedorTe-imagen-1 {
-      background-image: url(../assets/imagenes/cardiovascular.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 150px; }
-    .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe {
-      background-color: #ebe6e6; }
-      .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe h1 {
-        font-size: 20px;
-        text-align: center; }
-    .contenedorTe-grande-tarjetas:hover .parrafo-tarjetaTe p {
-      font-size: 16px;
-      color: white; }
-    .contenedorTe-grande-tarjetas:hover .contenedorTe-imagen-2 {
-      background-image: url(../assets/imagenes/saludmental.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 150px; }
-    .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe {
-      background-color: #ebe6e6; }
-      .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe h1 {
-        font-size: 20px;
-        text-align: center; }
-    .contenedorTe-grande-tarjetas:hover .parrafo-tarjetaTe p {
-      font-size: 16px;
-      color: white; }
-    .contenedorTe-grande-tarjetas:hover .contenedorTe-imagen-3 {
-      background-image: url(../assets/imagenes/grasacorporal.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 150px; }
-    .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe {
-      background-color: #ebe6e6; }
-      .contenedorTe-grande-tarjetas:hover .titulo-tarjetaTe h1 {
-        font-size: 20px;
-        text-align: center; }
-    .contenedorTe-grande-tarjetas:hover .parrafo-tarjetaTe p {
-      font-size: 16px;
-      color: white; }
+      .contenedorTe-grande-tarjetas:hover .tarjetaTe .titulo-tarjetaTe {
+        background-color: #ebe6e6; }
+        .contenedorTe-grande-tarjetas:hover .tarjetaTe .titulo-tarjetaTe h1 {
+          font-size: 20px;
+          text-align: center; }
+      .contenedorTe-grande-tarjetas:hover .tarjetaTe .parrafo-tarjetaTe p {
+        font-size: 16px;
+        color: black; }
 
 /* mapa */
 .contenedorTe-grande-mapa {
@@ -270,7 +235,8 @@
     flex-direction: column;
     width: 100%;
     margin-top: 50px;
-    background-color: #ebe6e6; }
+    background-color: #ebe6e6;
+    flex-wrap: wrap; }
     .contenedorTe-grande-mapa .contenedorTe-mapa {
       width: 100%;
       margin-left: 0px; }
