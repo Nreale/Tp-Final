@@ -11,7 +11,6 @@
     animation: animacion-texto 2s;
     text-align: center;
   }
-  
   @keyframes animacion-texto {
     0% {
       transform: scale(1);
@@ -40,19 +39,22 @@ p{
     text-align: center;
 }
 .padre1{
-    background-color: #ffffff;
+    background-color: #f7f6f6;
     width: 100%;
     border: 90px;
 }
 .padre2{
     background-color: #ffffff;
-    width: 100%;
+    width: 99%;
+    border: solid rgba(206, 206, 206, 0.322) 40px;
+    margin-left: 12px;
+    margin-right: 50px;
 }
 .contvol{
     background-color: #fefdff;
     height: 450px;
     width: 440px;
-    margin-left: 800px;
+    margin-left: 700px;
     margin-top: 15px;
     border-radius: 10%;
     transition: transform 0.3 ease;
@@ -70,9 +72,9 @@ p{
 }
 .contvol-3{
     background-color: #ffffff;
-    height: 550px;
+    height: 690px;
     width: 440px;
-    margin-left: 800px;
+    margin-left: 750px;
     margin-top: 15px;
     border-radius: 6%;
 }
@@ -105,6 +107,7 @@ p{
     display: flex;
     justify-content: center;
     background-color: #ffffff;
+    border-radius: 60%;
 }
 .jugadores{
     text-align: center;
