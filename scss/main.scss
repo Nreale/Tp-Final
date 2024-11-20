@@ -1,6 +1,6 @@
 @import "menu";
 @import "tenis";
-@import "basquet";
+@import "basquetball";
 
 *{
     margin: 0;
@@ -145,6 +145,7 @@ $margenes:(
 /*quienes somos*/
 
 .cont-info1{
+    overflow-x: hidden;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -152,7 +153,7 @@ $margenes:(
     height: 200px;
     background-color: #878787;
     text-align: center;
-    h1{
+    h2{
         color: white;
         transition: transform 0.3s ease, text-shadow 0.3s ease;
         &:hover{
@@ -198,12 +199,17 @@ $margenes:(
     }
 }
 
-
+.nutricion{
+    margin-top: 200px;
+    overflow-x: hidden;
+    @extend .cont-info1;
+    
+}
 
 @media screen and (max-width: 1023px){
     .cont-info1{
         height: 300px;
-        h1{
+        h2{
             margin-bottom: 20px;
         }
     }
