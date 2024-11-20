@@ -98,8 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  filter: grayscale(100%);
-  transition: filter 10s ease; }
+  filter: grayscale(100%); }
   .contenedorTe-imagen1-info1 .contenedorTe-info1 {
     height: 300px;
     width: 50%;
@@ -140,7 +139,7 @@
   .contenedorTe-grande-mapa .contenedorTe-mapa {
     margin-left: 10px;
     height: 350px;
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center; }
     .contenedorTe-grande-mapa .contenedorTe-mapa iframe {
@@ -148,8 +147,10 @@
       height: 100%; }
   .contenedorTe-grande-mapa .contenedorTe-text-mapa {
     width: auto;
-    height: auto;
-    margin-left: 20px; }
+    height: 200px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap; }
     .contenedorTe-grande-mapa .contenedorTe-text-mapa .titulo-mapa {
       display: flex;
       align-items: center;
@@ -157,8 +158,35 @@
       width: 100%;
       height: 50px; }
     .contenedorTe-grande-mapa .contenedorTe-text-mapa .parrafo-mapa {
-      text-align: center;
       color: black; }
+
+.contenedorTe-grande-tarjetas {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../assets/imagenes/canchatenis.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%); }
+  .contenedorTe-grande-tarjetas .tarjetaTe {
+    background-color: aqua;
+    width: 300px;
+    height: 90%;
+    display: flex;
+    flex-direction: column; }
+    .contenedorTe-grande-tarjetas .tarjetaTe .contenedorTe-imagen {
+      width: 100%;
+      height: 150px;
+      background-color: red; }
+    .contenedorTe-grande-tarjetas .tarjetaTe .titulo-tarjetaTe {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 @media screen and (max-width: 1023px) {
   .contenedorTe-imagen1-info1 {
@@ -170,7 +198,19 @@
       width: 80%; }
       .contenedorTe-imagen1-info1 .contenedorTe-info1 .contenedorTe-info1-p1 {
         margin-top: 50px;
-        color: black; } }
+        color: black; }
+  .contenedorTe-grande-mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #ebe6e6; }
+    .contenedorTe-grande-mapa .contenedorTe-mapa {
+      width: 100%;
+      margin-left: 0px; }
+    .contenedorTe-grande-mapa .contenedorTe-text-mapa {
+      margin-top: 20px;
+      margin-left: 0px; } }
 
 * {
   margin: 0;
@@ -213,7 +253,7 @@
 }*/
 .link {
   background-color: #1f1f1f;
-  height: 350px;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around; }
@@ -224,10 +264,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-1 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-1:hover {
+      transform: scale(1.5); }
   .link .link-imagen-2 {
     margin-top: 100px;
     display: flex;
@@ -235,10 +278,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-2 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-2:hover {
+      transform: scale(1.5); }
   .link .link-imagen-3 {
     margin-top: 50px;
     display: flex;
@@ -246,10 +292,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-3 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-3:hover {
+      transform: scale(1.5); }
   .link .link-imagen-4 {
     margin-top: 50px;
     display: flex;
@@ -257,10 +306,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-4 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-4:hover {
+      transform: scale(1.5); }
   .link .link-imagen-5 {
     margin-top: 100px;
     display: flex;
@@ -268,10 +320,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-5 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-5:hover {
+      transform: scale(1.5); }
   .link .link-imagen-6 {
     margin-top: 175px;
     display: flex;
@@ -279,10 +334,37 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-6 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-6:hover {
+      transform: scale(1.5); }
+  .link .link-imagen-1 {
+    box-shadow: 0 0 15px blue; }
+  .link .link-imagen-2 {
+    box-shadow: 0 0 15px lightblue; }
+  .link .link-imagen-3 {
+    box-shadow: 0 0 15px lightgreen; }
+  .link .link-imagen-4 {
+    box-shadow: 0 0 15px orange; }
+  .link .link-imagen-5 {
+    box-shadow: 0 0 15px red; }
+  .link .link-imagen-6 {
+    box-shadow: 0 0 15px yellow; }
+
+.linea {
+  width: 100%;
+  height: 50px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .linea .linea-forma {
+    background-color: lightgray;
+    height: 5px;
+    width: 80%; }
 
 .cont-decoracion {
   background-color: #1f1f1f;
