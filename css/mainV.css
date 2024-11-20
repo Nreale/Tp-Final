@@ -42,11 +42,32 @@
 * {
   margin: 0;
   border: 0;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
+
+.padre1 {
+  color: #000000;
+  animation: animacion-texto 2s;
+  text-align: center; }
+
+@keyframes animacion-texto {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
 
 h1 {
   color: black;
   text-align: center; }
+
+h2 {
+  text-align: center;
+  color: black; }
 
 p {
   color: black;
@@ -61,63 +82,62 @@ p {
   background-color: #ffffff;
   width: 100%; }
 
-h2 {
-  text-align: center;
-  color: white; }
-
 .contvol {
-  background-color: #049fa1;
+  background-color: #fefdff;
   height: 450px;
   width: 440px;
   margin-left: 800px;
   margin-top: 15px;
-  border-radius: 10%; }
-
-.img1 {
-  border-radius: 15px; }
-
-.tecnicas {
-  text-align: left; }
+  border-radius: 10%;
+  transition: transform 0.3 ease; }
+  .contvol:hover {
+    transform: scale 1.2; }
 
 .contvol-2 {
-  background-color: #049fa1;
+  background-color: #ffffff;
   height: 450px;
   width: 440px;
   margin-left: 200px;
   margin-top: 15px;
   border-radius: 10%; }
 
-.img2 {
-  border-radius: 15px; }
-
 .contvol-3 {
-  background-color: #049fa1;
+  background-color: #ffffff;
   height: 550px;
   width: 440px;
   margin-left: 800px;
   margin-top: 15px;
   border-radius: 6%; }
 
+.img1 {
+  border-radius: 15px; }
+
+.img2 {
+  border-radius: 15px; }
+
 .img3 {
   border-radius: 15px; }
+
+.tecnicas {
+  text-align: left; }
 
 .gibaBR {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #049fa1; }
+  background-color: #ffffff; }
 
 .regoBR {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #049fa1; }
+  background-color: #ffffff; }
 
 .karchEEUU {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #049fa1; }
+  background-color: #ffffff; }
 
 .jugadores {
   text-align: center; }
@@ -128,4 +148,4 @@ h2 {
 .mapa {
   display: flex;
   justify-content: center;
-  background-color: #049fa1; }
+  background-color: #ffffff; }
