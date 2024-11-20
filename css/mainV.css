@@ -1,64 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+#header {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0; }
+
+.logoP, .maslogos {
+  display: flex;
+  align-items: center; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
+
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #0e788d85 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px; }
+    .maslogos button p {
+      font-size: 16px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
+
 * {
   margin: 0;
   border: 0;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
+
+.padre1 {
+  color: #000000;
+  animation: animacion-texto 2s;
+  text-align: center; }
+
+@keyframes animacion-texto {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
 
 h1 {
-  text-align: center;
-  color: red; }
-
-p {
-  color: red; }
+  color: black;
+  text-align: center; }
 
 h2 {
   text-align: center;
-  color: white; }
+  color: black; }
+
+p {
+  color: black;
+  text-align: center; }
+
+.padre1 {
+  background-color: #ffffff;
+  width: 100%;
+  border: 90px; }
+
+.padre2 {
+  background-color: #ffffff;
+  width: 100%; }
 
 .contvol {
-  background-color: #0004fc;
+  background-color: #fefdff;
   height: 450px;
   width: 440px;
   margin-left: 800px;
   margin-top: 15px;
-  border-radius: 10%; }
-
-.img1 {
-  border-radius: 15px; }
-
-.tecnicas {
-  text-align: left; }
+  border-radius: 10%;
+  transition: transform 0.3 ease; }
+  .contvol:hover {
+    transform: scale 1.2; }
 
 .contvol-2 {
-  background-color: #0004fc;
+  background-color: #ffffff;
   height: 450px;
   width: 440px;
   margin-left: 200px;
   margin-top: 15px;
   border-radius: 10%; }
 
-.img2 {
-  border-radius: 15px; }
-
 .contvol-3 {
-  background-color: #0004fc;
+  background-color: #ffffff;
   height: 550px;
   width: 440px;
   margin-left: 800px;
   margin-top: 15px;
   border-radius: 6%; }
 
+.img1 {
+  border-radius: 15px; }
+
+.img2 {
+  border-radius: 15px; }
+
 .img3 {
   border-radius: 15px; }
 
-.equipoCH {
-  background-color: #0004fc;
+.tecnicas {
+  text-align: left; }
+
+.gibaBR {
   width: 100%;
-  margin-top: 15px; }
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; }
 
-.equipoEU {
-  background-color: #0004fc; }
+.regoBR {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; }
 
-.equipoBR {
-  width: 50%;
-  margin-left: 300px;
-  margin-top: 15px; }
+.karchEEUU {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; }
+
+.jugadores {
+  text-align: center; }
+
+.canchas {
+  text-align: center; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; }
