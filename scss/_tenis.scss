@@ -12,60 +12,58 @@
     margin: 0;
 }
 
-.contenedorTe-imagen1-info1{
-    will-change: filter;
-    background-image: url(../assets/imagenes/tenis1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
+.contenedorTe-grande-tenis{
+    height: 600px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: end;
-    filter: grayscale(100%);
-    .contenedorTe-info1{
-        height: 300px;
-        width: 50%;
-        margin-right: 20px;
-        .contenedorTe-info1-h1{
+    .contenedorTe-imagen-tenis{
+        background-color: red;
+        height: 90%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }   
+        
+    }
+    .contenedorTe-text-tenis{
+        height: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+
+        .tituloTe-tenis{
+            margin-top: 20px;
             height: 50px;
-            width: 100%;
             display: flex;
-            align-items: center;
             justify-content: center;
-
+            h1{
+                font-size: 35px;
+            }
         }
-        .contenedorTe-info1-p1{
-            height: 250px;
-            width: 100%;
-            font-size: 20px;
+        .lineaTe{
+            height: 5px;
+            background-color: black;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        .parrafoTe-tenis{
+            color: black;
+            height: auto;
             text-align: center;
-            display: flex;
-            align-items: center;
-            text-shadow: 2px 2px 5px gray;
-
-            
+            margin-top: 80px;
+            p{
+                font-size: 20px;
+            }
         }
         
     }
-    &:hover{
-        filter: saturate(200%) grayscale(0%);
-        .contenedorTe-info1{
-            backdrop-filter: blur(10px);
-            border: solid black 1px;
-            border-radius: 12px;
-            .contenedorTe-info1-h1{
-                background-color: #f1eded;
-                border-top-left-radius: 12px;
-                border-top-right-radius: 12px;
-                
-            }
-            .contenedorTe-info1-p1{
-                color: white;
-            }
-        }
-    }
-    
 }
 
 .contenedorTe-espacio-titulo{
