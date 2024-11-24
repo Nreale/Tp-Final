@@ -93,7 +93,8 @@
   height: 600px;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .contenedorTe-grande-tenis .contenedorTe-imagen-tenis {
     background-color: red;
     height: 90%;
@@ -117,11 +118,15 @@
       justify-content: center; }
       .contenedorTe-grande-tenis .contenedorTe-text-tenis .tituloTe-tenis h1 {
         font-size: 35px; }
-    .contenedorTe-grande-tenis .contenedorTe-text-tenis .lineaTe {
+    .contenedorTe-grande-tenis .contenedorTe-text-tenis .contenedorTe-linea {
       height: 5px;
-      background-color: black;
-      margin-left: 40px;
-      border-radius: 10px; }
+      display: flex;
+      justify-content: center; }
+      .contenedorTe-grande-tenis .contenedorTe-text-tenis .contenedorTe-linea .lineaTe {
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+        width: 80%; }
     .contenedorTe-grande-tenis .contenedorTe-text-tenis .parrafoTe-tenis {
       color: black;
       height: auto;
@@ -323,6 +328,49 @@
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+#header {
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.logoP, .maslogos {
+  display: flex;
+  align-items: center; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
+
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #0e788d85 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px; }
+    .maslogos button p {
+      font-size: 16px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
+
+.hockey {
+  color: red; }
 
 * {
   margin: 0;
