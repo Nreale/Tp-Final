@@ -141,83 +141,49 @@
             }
         }
     }
-    .contenedorTe-imagenes-mejoras{
-        height: 100%;
-        background-color: brown;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .contenedorTe-columna1-mejoras{
-            height: 100%;
-            background-color: green;
-            display: flex;
-            flex-direction: column;
-            .contenedorTe-imagen1-mejoras{
-                margin-top: 20px;
-                height: 250px;
-                background-color: blue;
-                transition: box-shadow 2s ease;
-                filter: grayscale(100%);
-                .contenedorTe-num-mejoras{
-                    background-color: white;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 10px;
-                    margin-left: 10px;
-                    border-radius: 50%;
-                    h1{
-                        align-items: center;
-                    }
-                }
-                &:hover{
-                    filter: saturate(200%);
-                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
-                }
-            }
-            
 
-            .contenedorTe-imagen2-mejoras{
-                margin-top: 130px;
-                margin-left: 50px;
-                height: 200px;
-                background-color: black;
-                .contenedorTe-num-mejoras{
-                    background-color: white;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 10px;
-                    margin-left: 10px;
-                    border-radius: 55%;
-                    h1{
-                        align-items: center;
-                    }
-                }
-            }
-        }
-        .contenedorTe-columna2-mejoras{
-            height: 100%;
-            background-color: aqua;
+    .contenedorColumnas{
+        display: flex;
+        background-color: red;
+        
+    }
+
+    .columna1{
+        display: flex;
+        background-color: green;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+
+        .columna1-card1{
             display: flex;
-            justify-content: center;
-            .contenedorTe-imagen3-mejoras{
-                height: 400px;
-                background-color: green;
-                margin-top: 150px;
-                .contenedorTe-num-mejoras{
-                    background-color: white;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 10px;
-                    margin-left: 10px;
-                    border-radius: 55%;
-                    h1{
-                        align-items: center;
-                    }
-                }
-            }   
+            height: 200px;
+            width: 80%;
+            background-color: pink;
+        }
+
+        .columna1-card2{
+            display: flex;
+            background-color: cyan;
+            height: 200px;
+            width: 80%;
+        }
+    }
+    
+    .columna2{
+        display: flex;
+        background-color: blue;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        .columna2-card{
+            display: flex;
+            background-color: cyan;
+            height: 200px;
+            width: 80%;
         }
     }
 }

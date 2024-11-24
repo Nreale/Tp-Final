@@ -191,70 +191,38 @@
               color: black; }
         .contenedorTe-mejoras-imagnes .contenedorTe-fila-mejoras .contenedorTe-fila .contenedorTe-mejoras:hover {
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
-  .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras {
-    height: 100%;
-    background-color: brown;
+  .contenedorTe-mejoras-imagnes .contenedorColumnas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras {
-      height: 100%;
-      background-color: green;
+    background-color: red; }
+  .contenedorTe-mejoras-imagnes .columna1 {
+    display: flex;
+    background-color: green;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px; }
+    .contenedorTe-mejoras-imagnes .columna1 .columna1-card1 {
       display: flex;
-      flex-direction: column; }
-      .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen1-mejoras {
-        margin-top: 20px;
-        height: 250px;
-        background-color: blue;
-        transition: box-shadow 2s ease;
-        filter: grayscale(100%); }
-        .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen1-mejoras .contenedorTe-num-mejoras {
-          background-color: white;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          margin-top: 10px;
-          margin-left: 10px;
-          border-radius: 50%; }
-          .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen1-mejoras .contenedorTe-num-mejoras h1 {
-            align-items: center; }
-        .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen1-mejoras:hover {
-          filter: saturate(200%);
-          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
-      .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen2-mejoras {
-        margin-top: 130px;
-        margin-left: 50px;
-        height: 200px;
-        background-color: black; }
-        .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen2-mejoras .contenedorTe-num-mejoras {
-          background-color: white;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          margin-top: 10px;
-          margin-left: 10px;
-          border-radius: 55%; }
-          .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna1-mejoras .contenedorTe-imagen2-mejoras .contenedorTe-num-mejoras h1 {
-            align-items: center; }
-    .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna2-mejoras {
-      height: 100%;
-      background-color: aqua;
+      height: 200px;
+      width: 80%;
+      background-color: pink; }
+    .contenedorTe-mejoras-imagnes .columna1 .columna1-card2 {
       display: flex;
-      justify-content: center; }
-      .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna2-mejoras .contenedorTe-imagen3-mejoras {
-        height: 400px;
-        background-color: green;
-        margin-top: 150px; }
-        .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna2-mejoras .contenedorTe-imagen3-mejoras .contenedorTe-num-mejoras {
-          background-color: white;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          margin-top: 10px;
-          margin-left: 10px;
-          border-radius: 55%; }
-          .contenedorTe-mejoras-imagnes .contenedorTe-imagenes-mejoras .contenedorTe-columna2-mejoras .contenedorTe-imagen3-mejoras .contenedorTe-num-mejoras h1 {
-            align-items: center; }
+      background-color: cyan;
+      height: 200px;
+      width: 80%; }
+  .contenedorTe-mejoras-imagnes .columna2 {
+    display: flex;
+    background-color: blue;
+    width: 50%;
+    justify-content: center;
+    align-items: center; }
+    .contenedorTe-mejoras-imagnes .columna2 .columna2-card {
+      display: flex;
+      background-color: cyan;
+      height: 200px;
+      width: 80%; }
 
 /* mapa */
 .contenedorTe-grande-mapa {
@@ -427,10 +395,10 @@ h3 {
   color: #af3232;
   padding: 25px; }
 
-a {
+.a-footer {
   text-decoration: none; }
 
-a:hover {
+.a-footer:hover {
   color: #f18930; }
 
 .social-icons i:hover {
