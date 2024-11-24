@@ -329,6 +329,58 @@
       margin: 4px 0px 6px 5px;
       color: black; }
 
+body {
+  background-color: #f0f0f0; }
+
+.nutricion {
+  width: 100%;
+  height: 500px;
+  background-color: #2e5a41;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .nutricion .nutricion-info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    background-color: seagreen;
+    transition: transform 0.3s ease; }
+    .nutricion .nutricion-info h1 {
+      font-size: 40px;
+      color: #ffffff; }
+    .nutricion .nutricion-info p {
+      margin-top: 20px;
+      color: #ffffff;
+      text-align: start; }
+    .nutricion .nutricion-info:hover {
+      transform: scale(1.1); }
+  .nutricion .nutricion-carrousel img {
+    height: 400px;
+    border-radius: 25px; }
+
+.secciones {
+  margin: 50px 0px 50px 0px;
+  text-align: center; }
+  .secciones h2 {
+    font-size: 35px; }
+
+@media screen and (max-width: 1023px) {
+  .nutricion {
+    height: 550px; }
+    .nutricion .nutricion-info {
+      display: block;
+      height: 225px;
+      text-align: center; }
+      .nutricion .nutricion-info h1 {
+        font-size: 28px; }
+      .nutricion .nutricion-info p {
+        text-align: center; }
+    .nutricion .nutricion-carrousel img {
+      height: 250px; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -411,7 +463,7 @@
         justify-content: end;
     }
 }*/
-.titulo-princ, .nutricion {
+.titulo-princ, .quienessomos {
   overflow-x: hidden;
   width: 100%;
   height: 75px;
@@ -420,10 +472,10 @@
   justify-content: center;
   align-items: center;
   text-align: center; }
-  .titulo-princ h1, .nutricion h1 {
+  .titulo-princ h1, .quienessomos h1 {
     color: white;
     transition: transform 0.3s ease, text-shadow 0.3s ease; }
-    .titulo-princ h1:hover, .nutricion h1:hover {
+    .titulo-princ h1:hover, .quienessomos h1:hover {
       transform: scale(1.1);
       text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
 
@@ -530,7 +582,7 @@
   .link .link-imagen-6 {
     box-shadow: 0 0 15px yellow; }
 
-.linea, .linea-2 {
+.linea {
   width: 100%;
   height: 75px;
   background-color: #1f1f1f;
@@ -538,7 +590,7 @@
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #1f1f1f, #878787); }
-  .linea .linea-forma, .linea-2 .linea-forma {
+  .linea .linea-forma {
     background-color: lightgray;
     height: 5px;
     width: 80%; }
@@ -575,7 +627,7 @@
   padding: 0; }
 
 /*quienes somos*/
-.cont-info1, .nutricion {
+.cont-info1, .quienessomos {
   overflow-x: hidden;
   flex-direction: column;
   display: flex;
@@ -584,18 +636,18 @@
   height: 200px;
   background-color: #878787;
   text-align: center; }
-  .cont-info1 h2, .nutricion h2 {
+  .cont-info1 h2, .quienessomos h2 {
     color: white;
     transition: transform 0.3s ease, text-shadow 0.3s ease; }
-    .cont-info1 h2:hover, .nutricion h2:hover {
+    .cont-info1 h2:hover, .quienessomos h2:hover {
       transform: scale(1.1);
       text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
-  .cont-info1 p, .nutricion p {
+  .cont-info1 p, .quienessomos p {
     padding: 0 10% 0 10%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, text-shadow 0.3s ease; }
-    .cont-info1 p:hover, .nutricion p:hover {
+    .cont-info1 p:hover, .quienessomos p:hover {
       transform: scale(1.1);
       text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
 
@@ -626,14 +678,17 @@
     .cont-decoracion .imagen3:hover {
       transform: rotate(30deg); }
 
-.nutricion {
+/*.linea-2{
+    @extend .linea;
+}*/
+.quienessomos {
   margin-top: 200px;
   overflow-x: hidden; }
 
 @media screen and (max-width: 1023px) {
-  .cont-info1, .nutricion {
+  .cont-info1, .quienessomos {
     height: 300px; }
-    .cont-info1 h2, .nutricion h2 {
+    .cont-info1 h2, .quienessomos h2 {
       margin-bottom: 20px; }
   .link {
     height: 1000px; }
@@ -649,3 +704,5 @@
       margin-top: 20px; }
     .link .link-imagen-6 {
       margin-top: 20px; } }
+
+/*PAGINA NUTRICION*/
