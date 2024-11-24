@@ -83,68 +83,109 @@
     }
 }
 
-.contenedorTe-grande-tarjetas{
-    width: 100%;
-    height: 500px;
+.contenedorTe-mejoras-imagnes{
+    height: 650px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(../assets/imagenes/canchatenis.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(100%);
-    .tarjetaTe{
-        width: 300px;
-        height: 90%;
+    flex-direction: row;
+    .contenedorTe-fila-mejoras{
+        background-color: white;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        .titulo-tarjetaTe{
-            width: 100%;
-            height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/imagenes/fondoTe.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .contenedorTe-fila{
+            height: 216.5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            h1{
-                font-size: 0px;
-            }
-            
-        }
-        .parrafo-tarjetaTe{
-            margin-top: 60px;
-            width: 100%;
-            height: 100px;
-            p{
-                font-size: 0px;
-            }  
-        }
-    }
-    &:hover{
-        filter: saturate(200%) grayscale(0%);
-        .tarjetaTe{
-            background-color: rgb(255, 255, 255);
-            border: solid black 1px;
-            .titulo-tarjetaTe{
-                background-color: #ebe6e6;
-                h1{
-                    font-size: 20px;
-                    text-align: center;
+            .contenedorTe-mejoras{
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                border: solid 1px black; 
+                transition: box-shadow 1s ease;
+                background-color: white;
+                .contenedorTe-titulo-mejoras{
+                    height: 30px;
+                    background-color: rgb(116, 177, 247);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1{
+                        color: white;
+                        font-size: 17px;
+                    }
                 }
-            }
-            .parrafo-tarjetaTe{
-                p{
-                    font-size: 16px;
-                    color: black;
+                .contenedorTe-text-mejoras{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80%;
+                    .parrafoTe-mejoras{
+                        height: 100%;
+                        p{
+                            color: black;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
                     
                 }
+
             }
-
         }
-        
+    }
 
-    
+    .contenedorColumnas{
+        display: flex;
+        background-color: red;
+        
+    }
+
+    .columna1{
+        display: flex;
+        background-color: green;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+
+        .columna1-card1{
+            display: flex;
+            height: 200px;
+            width: 80%;
+            background-color: pink;
+        }
+
+        .columna1-card2{
+            display: flex;
+            background-color: cyan;
+            height: 200px;
+            width: 80%;
+        }
     }
     
+    .columna2{
+        display: flex;
+        background-color: blue;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        .columna2-card{
+            display: flex;
+            background-color: cyan;
+            height: 200px;
+            width: 80%;
+        }
+    }
 }
 
 
