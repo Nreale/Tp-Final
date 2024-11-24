@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0; }
 
 /* Header */
 #header {
-  background-color: #f8f8f8;
+  background-color: white;
   margin: 0;
   padding: 0; }
 
@@ -45,7 +46,7 @@
 
 /* Header */
 #header {
-  background-color: #f8f8f8;
+  background-color: white;
   margin: 0;
   padding: 0; }
 
@@ -88,58 +89,109 @@
   padding: 0;
   margin: 0; }
 
-.contenedorTe-imagen1-info1 {
-  will-change: filter;
-  background-image: url(../assets/imagenes/tenis1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
+.contenedorTe-grande-tenis {
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .contenedorTe-grande-tenis .contenedorTe-imagen-tenis {
+    background-color: red;
+    height: 90%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+    .contenedorTe-grande-tenis .contenedorTe-imagen-tenis img {
+      object-fit: cover;
+      transition: transform 0.3s ease; }
+      .contenedorTe-grande-tenis .contenedorTe-imagen-tenis img:hover {
+        transform: scale(1.2); }
+  .contenedorTe-grande-tenis .contenedorTe-text-tenis {
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+    .contenedorTe-grande-tenis .contenedorTe-text-tenis .tituloTe-tenis {
+      margin-top: 20px;
+      height: 50px;
+      display: flex;
+      justify-content: center; }
+      .contenedorTe-grande-tenis .contenedorTe-text-tenis .tituloTe-tenis h1 {
+        font-size: 35px; }
+    .contenedorTe-grande-tenis .contenedorTe-text-tenis .lineaTe {
+      height: 5px;
+      background-color: black;
+      margin-left: 40px;
+      border-radius: 10px; }
+    .contenedorTe-grande-tenis .contenedorTe-text-tenis .parrafoTe-tenis {
+      color: black;
+      height: auto;
+      text-align: center;
+      margin-top: 80px; }
+      .contenedorTe-grande-tenis .contenedorTe-text-tenis .parrafoTe-tenis p {
+        font-size: 20px; }
+
+.contenedorTe-espacio-titulo {
+  width: 100%;
+  height: 150px;
   display: flex;
   align-items: center;
-  justify-content: end;
-  filter: grayscale(100%);
-  transition: filter 10s ease; }
-  .contenedorTe-imagen1-info1 .contenedorTe-info1 {
-    height: 300px;
-    width: 50%;
-    margin-right: 20px; }
-    .contenedorTe-imagen1-info1 .contenedorTe-info1 .contenedorTe-info1-h1 {
+  justify-content: center; }
+  .contenedorTe-espacio-titulo .tituloTe-espacio {
+    color: black; }
+
+.contenedorTe-grande-tarjetas {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../assets/imagenes/canchatenis.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%); }
+  .contenedorTe-grande-tarjetas .tarjetaTe {
+    width: 300px;
+    height: 90%;
+    display: flex;
+    flex-direction: column; }
+    .contenedorTe-grande-tarjetas .tarjetaTe .titulo-tarjetaTe {
+      width: 100%;
       height: 50px;
-      width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center; }
-    .contenedorTe-imagen1-info1 .contenedorTe-info1 .contenedorTe-info1-p1 {
-      height: 250px;
-      width: 100%;
-      font-size: 20px;
-      text-align: center;
-      display: flex;
+      justify-content: center;
       align-items: center; }
-  .contenedorTe-imagen1-info1:hover {
+      .contenedorTe-grande-tarjetas .tarjetaTe .titulo-tarjetaTe h1 {
+        font-size: 0px; }
+    .contenedorTe-grande-tarjetas .tarjetaTe .parrafo-tarjetaTe {
+      margin-top: 60px;
+      width: 100%;
+      height: 100px; }
+      .contenedorTe-grande-tarjetas .tarjetaTe .parrafo-tarjetaTe p {
+        font-size: 0px; }
+  .contenedorTe-grande-tarjetas:hover {
     filter: saturate(200%) grayscale(0%); }
-    .contenedorTe-imagen1-info1:hover .contenedorTe-info1 {
-      backdrop-filter: blur(5px);
-      border: solid black 1px;
-      border-radius: 12px; }
-      .contenedorTe-imagen1-info1:hover .contenedorTe-info1 .contenedorTe-info1-h1 {
-        background-color: #f1eded;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px; }
-      .contenedorTe-imagen1-info1:hover .contenedorTe-info1 .contenedorTe-info1-p1 {
-        color: white; }
+    .contenedorTe-grande-tarjetas:hover .tarjetaTe {
+      background-color: white;
+      border: solid black 1px; }
+      .contenedorTe-grande-tarjetas:hover .tarjetaTe .titulo-tarjetaTe {
+        background-color: #ebe6e6; }
+        .contenedorTe-grande-tarjetas:hover .tarjetaTe .titulo-tarjetaTe h1 {
+          font-size: 20px;
+          text-align: center; }
+      .contenedorTe-grande-tarjetas:hover .tarjetaTe .parrafo-tarjetaTe p {
+        font-size: 16px;
+        color: black; }
 
 /* mapa */
 .contenedorTe-grande-mapa {
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
   .contenedorTe-grande-mapa .contenedorTe-mapa {
-    margin-left: 10px;
-    height: 350px;
+    height: 450px;
     width: 60%;
     display: flex;
     align-items: center; }
@@ -147,17 +199,17 @@
       width: 100%;
       height: 100%; }
   .contenedorTe-grande-mapa .contenedorTe-text-mapa {
-    width: auto;
-    height: auto;
-    margin-left: 20px; }
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap; }
     .contenedorTe-grande-mapa .contenedorTe-text-mapa .titulo-mapa {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 80%;
       height: 50px; }
     .contenedorTe-grande-mapa .contenedorTe-text-mapa .parrafo-mapa {
-      text-align: center;
       color: black; }
 
 @media screen and (max-width: 1023px) {
@@ -170,7 +222,107 @@
       width: 80%; }
       .contenedorTe-imagen1-info1 .contenedorTe-info1 .contenedorTe-info1-p1 {
         margin-top: 50px;
-        color: black; } }
+        color: black; }
+  .contenedorTe-grande-tarjetas {
+    height: 1600px;
+    display: flex;
+    flex-wrap: wrap; }
+    .contenedorTe-grande-tarjetas .tarjetaTe {
+      height: 400px;
+      width: 80%; }
+  .contenedorTe-grande-mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #ebe6e6;
+    flex-wrap: wrap; }
+    .contenedorTe-grande-mapa .contenedorTe-mapa {
+      width: 100%;
+      margin-left: 0px; }
+    .contenedorTe-grande-mapa .contenedorTe-text-mapa {
+      margin-top: 20px;
+      margin-left: 0px; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+#header {
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.logoP, .maslogos {
+  display: flex;
+  align-items: center; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
+
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #0e788d85 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px; }
+    .maslogos button p {
+      font-size: 16px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+#header {
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.logoP, .maslogos {
+  display: flex;
+  align-items: center; }
+  .logoP img, .maslogos img {
+    width: 180px;
+    height: 180px; }
+
+.maslogos {
+  justify-content: space-around; }
+  .maslogos img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 3px 0px; }
+  .maslogos .menu {
+    width: 130px;
+    height: 60px; }
+  .maslogos button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #0e788d85 1px; }
+    .maslogos button:hover {
+      background: linear-gradient(to right, #0e788d85, #19ffff98);
+      border: solid #25645a 1px; }
+    .maslogos button p {
+      font-size: 16px;
+      margin: 4px 0px 6px 5px;
+      color: black; }
 
 * {
   margin: 0;
@@ -211,9 +363,25 @@
         justify-content: end;
     }
 }*/
+.titulo-princ, .nutricion {
+  overflow-x: hidden;
+  width: 100%;
+  height: 75px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .titulo-princ h1, .nutricion h1 {
+    color: white;
+    transition: transform 0.3s ease, text-shadow 0.3s ease; }
+    .titulo-princ h1:hover, .nutricion h1:hover {
+      transform: scale(1.1);
+      text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
+
 .link {
   background-color: #1f1f1f;
-  height: 350px;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around; }
@@ -224,10 +392,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-1 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-1:hover {
+      transform: scale(1.5); }
   .link .link-imagen-2 {
     margin-top: 100px;
     display: flex;
@@ -235,10 +406,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-2 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-2:hover {
+      transform: scale(1.5); }
   .link .link-imagen-3 {
     margin-top: 50px;
     display: flex;
@@ -246,10 +420,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-3 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-3:hover {
+      transform: scale(1.5); }
   .link .link-imagen-4 {
     margin-top: 50px;
     display: flex;
@@ -257,10 +434,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-4 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-4:hover {
+      transform: scale(1.5); }
   .link .link-imagen-5 {
     margin-top: 100px;
     display: flex;
@@ -268,10 +448,13 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-5 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-5:hover {
+      transform: scale(1.5); }
   .link .link-imagen-6 {
     margin-top: 175px;
     display: flex;
@@ -279,10 +462,38 @@
     align-items: center;
     height: 150px;
     width: 150px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease; }
     .link .link-imagen-6 img {
       height: 150px;
       width: 150px; }
+    .link .link-imagen-6:hover {
+      transform: scale(1.5); }
+  .link .link-imagen-1 {
+    box-shadow: 0 0 15px blue; }
+  .link .link-imagen-2 {
+    box-shadow: 0 0 15px lightblue; }
+  .link .link-imagen-3 {
+    box-shadow: 0 0 15px lightgreen; }
+  .link .link-imagen-4 {
+    box-shadow: 0 0 15px orange; }
+  .link .link-imagen-5 {
+    box-shadow: 0 0 15px red; }
+  .link .link-imagen-6 {
+    box-shadow: 0 0 15px yellow; }
+
+.linea, .linea-2 {
+  width: 100%;
+  height: 75px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #1f1f1f, #878787); }
+  .linea .linea-forma, .linea-2 .linea-forma {
+    background-color: lightgray;
+    height: 5px;
+    width: 80%; }
 
 .cont-decoracion {
   background-color: #1f1f1f;
@@ -316,31 +527,32 @@
   padding: 0; }
 
 /*quienes somos*/
-.cont-info1 {
+.cont-info1, .nutricion {
+  overflow-x: hidden;
   flex-direction: column;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 200px;
-  background-color: #1f1f1f;
+  background-color: #878787;
   text-align: center; }
-  .cont-info1 h1 {
+  .cont-info1 h2, .nutricion h2 {
     color: white;
     transition: transform 0.3s ease, text-shadow 0.3s ease; }
-    .cont-info1 h1:hover {
+    .cont-info1 h2:hover, .nutricion h2:hover {
       transform: scale(1.1);
       text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
-  .cont-info1 p {
+  .cont-info1 p, .nutricion p {
     padding: 0 10% 0 10%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, text-shadow 0.3s ease; }
-    .cont-info1 p:hover {
+    .cont-info1 p:hover, .nutricion p:hover {
       transform: scale(1.1);
       text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7); }
 
 .cont-decoracion {
-  background-color: #1f1f1f;
+  background-color: #878787;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -366,10 +578,14 @@
     .cont-decoracion .imagen3:hover {
       transform: rotate(30deg); }
 
+.nutricion {
+  margin-top: 200px;
+  overflow-x: hidden; }
+
 @media screen and (max-width: 1023px) {
-  .cont-info1 {
+  .cont-info1, .nutricion {
     height: 300px; }
-    .cont-info1 h1 {
+    .cont-info1 h2, .nutricion h2 {
       margin-bottom: 20px; }
   .link {
     height: 1000px; }

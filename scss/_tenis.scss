@@ -12,97 +12,69 @@
     margin: 0;
 }
 
-.contenedorTe-imagen1-info1{
-    will-change: filter;
-    background-image: url(../assets/imagenes/tenis1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
+.contenedorTe-grande-tenis{
+    height: 600px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: end;
-    filter: grayscale(100%);
-    .contenedorTe-info1{
-        height: 300px;
-        width: 50%;
-        margin-right: 20px;
-        .contenedorTe-info1-h1{
-            height: 50px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .contenedorTe-imagen-tenis{
+        background-color: red;
+        height: 90%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }   
+        
+    }
+    .contenedorTe-text-tenis{
+        height: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
 
-        }
-        .contenedorTe-info1-p1{
-            height: 250px;
-            width: 100%;
-            font-size: 20px;
-            text-align: center;
+        .tituloTe-tenis{
+            margin-top: 20px;
+            height: 50px;
             display: flex;
-            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 35px;
+            }
+        }
+        .lineaTe{
+            height: 5px;
+            background-color: black;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        .parrafoTe-tenis{
+            color: black;
+            height: auto;
+            text-align: center;
+            margin-top: 80px;
+            p{
+                font-size: 20px;
+            }
         }
         
     }
-    &:hover{
-        filter: saturate(200%) grayscale(0%);
-        .contenedorTe-info1{
-            backdrop-filter: blur(5px);
-            border: solid black 1px;
-            border-radius: 12px;
-            .contenedorTe-info1-h1{
-                background-color: #f1eded;
-                border-top-left-radius: 12px;
-                border-top-right-radius: 12px;
-                
-            }
-            .contenedorTe-info1-p1{
-                color: white;
-            }
-        }
-    }
-    
 }
 
-/* mapa */
-
-.contenedorTe-grande-mapa{
+.contenedorTe-espacio-titulo{
     width: 100%;
-    height: 400px;
+    height: 150px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    .contenedorTe-mapa{
-        margin-left: 10px;
-        height: 350px;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
+    justify-content: center;
+    .tituloTe-espacio{
+        color: black;
     }
-    .contenedorTe-text-mapa{
-        width: auto;
-        height: 200px;
-        margin-left: 20px;
-        display: flex;
-        flex-wrap: wrap;
-
-        .titulo-mapa{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 50px;
-        }
-        .parrafo-mapa{
-            color: black;
-        }
-    }
-
 }
 
 .contenedorTe-grande-tarjetas{
@@ -117,24 +89,98 @@
     background-size: cover;
     filter: grayscale(100%);
     .tarjetaTe{
-        background-color: aqua;
         width: 300px;
         height: 90%;
         display: flex;
         flex-direction: column;
-        .contenedorTe-imagen{
-            width: 100%;
-            height: 150px;
-            background-color: red;
-        }
         .titulo-tarjetaTe{
             width: 100%;
             height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            h1{
+                font-size: 0px;
+            }
+            
+        }
+        .parrafo-tarjetaTe{
+            margin-top: 60px;
+            width: 100%;
+            height: 100px;
+            p{
+                font-size: 0px;
+            }  
         }
     }
+    &:hover{
+        filter: saturate(200%) grayscale(0%);
+        .tarjetaTe{
+            background-color: rgb(255, 255, 255);
+            border: solid black 1px;
+            .titulo-tarjetaTe{
+                background-color: #ebe6e6;
+                h1{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+            .parrafo-tarjetaTe{
+                p{
+                    font-size: 16px;
+                    color: black;
+                    
+                }
+            }
+
+        }
+        
+
+    
+    }
+    
+}
+
+
+
+/* mapa */
+
+.contenedorTe-grande-mapa{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .contenedorTe-mapa{
+        height: 450px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .contenedorTe-text-mapa{
+        width: 40%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .titulo-mapa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 50px;
+        }
+        .parrafo-mapa{
+            color: black;
+            
+
+        }
+    }
+
 }
 
 @media screen and (max-width: 1023px){
@@ -151,12 +197,24 @@
             }
         }
     }
+
+    .contenedorTe-grande-tarjetas{
+        height: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+        .tarjetaTe{
+            height: 400px;
+            width: 80%;
+        }
+    }
+
     .contenedorTe-grande-mapa{
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 50px;
         background-color: #ebe6e6;
+        flex-wrap: wrap;
         .contenedorTe-mapa{
             width: 100%;
             margin-left: 0px;

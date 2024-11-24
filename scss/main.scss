@@ -1,6 +1,7 @@
 @import "menu";
 @import "tenis";
-
+@import "basquetball";
+@import "nutricion";
 
 *{
     margin: 0;
@@ -44,6 +45,25 @@
     }
 }*/
 
+.titulo-princ{
+    overflow-x: hidden;
+    width: 100%;
+    height: 75px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+        color: white;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+            text-shadow: 4px 4px 6px rgba(255, 221, 221, 0.7);
+        }
+    }
+}
+
 $margenes2:(
     1: 175px,
     2: 100px,
@@ -53,9 +73,18 @@ $margenes2:(
     6: 175px,
 );
 
+$bordes:(
+    1: blue,
+    2: lightblue,
+    3: lightgreen,
+    4: orange,
+    5: red,
+    6: yellow,
+);
+
 .link{
     background-color: #1f1f1f;
-    height: 350px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -72,11 +101,33 @@ $margenes2:(
                 height: 150px;
                 width: 150px;
             }
-            
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.5)  
+            }
+        }
+    }
+    @each $num, $borde in $bordes{
+        .link-imagen-#{$num}{
+            box-shadow: 0 0 15px $borde;
         }
     }
 }
 
+.linea{
+    width: 100%;
+    height: 75px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #1f1f1f,  #878787);
+    .linea-forma{
+        background-color: lightgray;
+        height: 5px;
+        width: 80%;
+    }
+}
 
 $margenes:(
     1: -50px,
@@ -109,17 +160,20 @@ $margenes:(
     padding: 0;
 }
 
+
+
 /*quienes somos*/
 
 .cont-info1{
+    overflow-x: hidden;
     flex-direction: column;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 200px;
-    background-color: #1f1f1f;
+    background-color: #878787;
     text-align: center;
-    h1{
+    h2{
         color: white;
         transition: transform 0.3s ease, text-shadow 0.3s ease;
         &:hover{
@@ -148,7 +202,7 @@ $margenes:(
 
 
 .cont-decoracion{
-    background-color: #1f1f1f;
+    background-color: #878787;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -165,12 +219,25 @@ $margenes:(
     }
 }
 
+.linea-2{
+    @extend .linea
+}
 
+.nutricion{
+    margin-top: 200px;
+    overflow-x: hidden;
+    @extend .cont-info1;
+    
+}
+
+.nutricion{
+    @extend .titulo-princ;
+}
 
 @media screen and (max-width: 1023px){
     .cont-info1{
         height: 300px;
-        h1{
+        h2{
             margin-bottom: 20px;
         }
     }
