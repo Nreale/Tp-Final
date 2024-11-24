@@ -93,7 +93,8 @@
   height: 600px;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .contenedorTe-grande-tenis .contenedorTe-imagen-tenis {
     background-color: red;
     height: 90%;

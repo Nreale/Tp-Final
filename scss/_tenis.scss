@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     .contenedorTe-imagen-tenis{
         background-color: red;
         height: 90%;
@@ -37,7 +38,7 @@
         display: flex;
         flex-direction: column;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
-
+        
         .tituloTe-tenis{
             margin-top: 20px;
             height: 50px;
@@ -47,11 +48,16 @@
                 font-size: 35px;
             }
         }
-        .lineaTe{
+        .contenedorTe-linea{
             height: 5px;
-            background-color: black;
-            margin-left: 40px;
-            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            .lineaTe{
+                height: 5px;
+                background-color: black;
+                border-radius: 10px;
+                width: 80%;
+            }
         }
         .parrafoTe-tenis{
             color: black;
