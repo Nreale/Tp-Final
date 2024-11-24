@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
@@ -74,47 +75,256 @@ p {
   text-align: center; }
 
 .padre1 {
-  background-color: #f7f6f6;
+  background-color: #ffffff;
   width: 100%;
   border: 90px; }
 
 .padre2 {
   background-color: #ffffff;
-  width: 100%;
-  border: solid rgba(206, 206, 206, 0.322) 40px;
-  margin-left: 12px;
-  margin-right: 50px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlKdpYJ61g-EhM18_KSmbBMShcoQQCkokxQ&s);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  width: 100%; }
 
 .contvol {
-  background-color: #fefdff;
-  height: 450px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* Para alinear los elementos verticalmente */
+  align-items: center;
+  /* Centra el contenido */
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
   width: 440px;
-  margin-left: 700px;
+  margin-left: 900px;
   margin-top: 15px;
   border-radius: 10%;
-  transition: transform 0.3 ease; }
-  .contvol:hover {
-    transform: scale 1.2; }
+  z-index: 0;
+  text-align: center;
+  /* Centra el texto */ }
+
+.contvol h2 {
+  color: white;
+  font-size: 2em;
+  position: relative;
+  /* Asegura visibilidad */
+  z-index: 2;
+  /* Por encima del fondo animado */
+  margin: 10px 0; }
+
+.contvol p {
+  color: white;
+  font-size: 1em;
+  position: relative;
+  /* Permite que el párrafo esté sobre los bordes animados */
+  z-index: 2;
+  /* Igual que el título */
+  margin: 10px 20px;
+  line-height: 1.5;
+  /* Mejora la legibilidad */ }
+
+.contvol img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  /* La imagen también está por encima de los bordes animados */
+  border-radius: 10%;
+  /* Coincide con el borde del contenedor */ }
+
+/* Bordes animados */
+.contvol::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10%;
+  border: 4px solid transparent;
+  background-image: linear-gradient(180deg, #00b7ff, #ff30ff);
+  animation: rotate-border 3s linear infinite;
+  z-index: 1; }
+
+/* Animación de rotación */
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.contvol::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10%;
+  background: #07182e;
+  z-index: 1;
+  /* Evita cubrir el contenido interno */ }
 
 .contvol-2 {
-  background-color: #ffffff;
-  height: 450px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* Para alinear los elementos verticalmente */
+  align-items: center;
+  /* Centra el contenido */
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
   width: 440px;
   margin-left: 200px;
   margin-top: 15px;
-  border-radius: 10%; }
+  border-radius: 10%;
+  z-index: 0;
+  text-align: center;
+  /* Centra el texto */ }
+
+.contvol-2 h2 {
+  color: white;
+  font-size: 2em;
+  position: relative;
+  /* Asegura visibilidad */
+  z-index: 2;
+  /* Por encima del fondo animado */
+  margin: 10px 0; }
+
+.contvol-2 p {
+  color: white;
+  font-size: 1em;
+  position: relative;
+  /* Permite que el párrafo esté sobre los bordes animados */
+  z-index: 2;
+  /* Igual que el título */
+  margin: 10px 20px;
+  line-height: 1.5;
+  /* Mejora la legibilidad */ }
+
+.contvol-2 img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  /* La imagen también está por encima de los bordes animados */
+  border-radius: 10%;
+  /* Coincide con el borde del contenedor */ }
+
+/* Bordes animados */
+.contvol-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10%;
+  border: 4px solid transparent;
+  background-image: linear-gradient(180deg, #00b7ff, #ff30ff);
+  animation: rotate-border 3s linear infinite;
+  z-index: 1; }
+
+/* Animación de rotación */
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.contvol-2::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10%;
+  background: #07182e;
+  z-index: 1;
+  /* Evita cubrir el contenido interno */ }
 
 .contvol-3 {
-  background-color: #ffffff;
-  height: 690px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* Para alinear los elementos verticalmente */
+  align-items: center;
+  /* Centra el contenido */
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
   width: 440px;
-  margin-left: 750px;
+  margin-left: 900px;
   margin-top: 15px;
-  border-radius: 6%; }
+  border-radius: 10%;
+  z-index: 0;
+  text-align: center;
+  /* Centra el texto */ }
+
+.contvol-3 h2 {
+  color: white;
+  font-size: 2em;
+  position: relative;
+  /* Asegura visibilidad */
+  z-index: 2;
+  /* Por encima del fondo animado */
+  margin: 10px 0; }
+
+.contvol-3 p {
+  color: white;
+  font-size: 1em;
+  position: relative;
+  /* Permite que el párrafo esté sobre los bordes animados */
+  z-index: 2;
+  /* Igual que el título */
+  margin: 10px 20px;
+  line-height: 1.5;
+  /* Mejora la legibilidad */ }
+
+.contvol-3 img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  /* La imagen también está por encima de los bordes animados */
+  border-radius: 10%;
+  /* Coincide con el borde del contenedor */ }
+
+/* Bordes animados */
+.contvol-3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10%;
+  border: 4px solid transparent;
+  background-image: linear-gradient(180deg, #00b7ff, #ff30ff);
+  animation: rotate-border 3s linear infinite;
+  z-index: 1; }
+
+/* Animación de rotación */
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.contvol-3::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10%;
+  background: #07182e;
+  z-index: 1;
+  /* Evita cubrir el contenido interno */ }
 
 .img1 {
   border-radius: 15px; }
@@ -144,8 +354,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
-  border-radius: 60%; }
+  background-color: #ffffff; }
 
 .jugadores {
   text-align: center; }
@@ -156,4 +365,4 @@ p {
 .mapa {
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #909090; }
