@@ -289,8 +289,11 @@
       margin: 4px 0px 6px 5px;
       color: black; }
 
-.Basket p {
-  color: red; }
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
 
 * {
   padding: 0;
