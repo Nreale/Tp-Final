@@ -220,18 +220,16 @@ $margenes:(
     }
 }
 
-.linea-2{
-    @extend .linea
-}
+/*.linea-2{
+    @extend .linea;
+}*/
 
-.nutricion{
+
+
+.quienessomos{
     margin-top: 200px;
     overflow-x: hidden;
     @extend .cont-info1;
-    
-}
-
-.nutricion{
     @extend .titulo-princ;
 }
 
@@ -253,3 +251,8 @@ $margenes:(
         }
     }
 }
+
+
+/*PAGINA NUTRICION*/
+
+
