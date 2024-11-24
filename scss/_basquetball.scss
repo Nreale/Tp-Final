@@ -3,6 +3,30 @@
 
 *{
     margin: 0;
+<<<<<<< HEAD
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.padre1{
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    background: #FF7F32;
+}
+.Malone{
+    background-color: #FF4500;
+    margin-left: 20px;
+}
+.Barkley{
+    background-color: #FF4500;
+    margin-left: 10px;
+}
+.Jonh{
+    background-color: #FF4500;
+    margin-left: 40px;
+}
+=======
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -96,3 +120,4 @@ h3{
     margin: 0;
     font-size: 16px;
 }
+>>>>>>> eebb27b185a6cb99fe7a9cc3778c139a679baaf3
