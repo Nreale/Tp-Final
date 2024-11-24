@@ -327,7 +327,6 @@
 
 * {
   margin: 0;
-<<<<<<< HEAD
   border: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box; }
@@ -349,10 +348,6 @@
 .Jonh {
   background-color: #FF4500;
   margin-left: 40px; }
-=======
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px; }
 
 footer {
   background: #343434;
@@ -436,7 +431,6 @@ h3 {
   color: #343434;
   margin: 0;
   font-size: 16px; }
->>>>>>> eebb27b185a6cb99fe7a9cc3778c139a679baaf3
 
 * {
   padding: 0;
