@@ -450,6 +450,13 @@ h3 {
   background-color: #FF4500;
   margin-left: 40px; }
 
+.marco-bas {
+  margin: auto; }
+
+.carrousel {
+  height: 400px;
+  border-radius: 25px; }
+
 footer {
   background: #343434;
   padding-top: 50px; }
@@ -572,6 +579,93 @@ h3 {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background: #343434;
+  padding-top: 50px; }
+
+.container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.footer-content {
+  width: 33.5%; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center; }
+
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px; }
+
+.footer-content ul {
+  text-align: center; }
+
+.list {
+  padding: 0; }
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative; }
+
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s; }
+
+.list li:hover::before {
+  width: 70px; }
+
+.social-icons {
+  text-align: center;
+  padding: 0; }
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px; }
+
+.social-icons i {
+  color: #af3232;
+  padding: 25px; }
+
+.a-footer {
+  text-decoration: none; }
+
+.a-footer:hover {
+  color: #f18930; }
+
+.social-icons i:hover {
+  color: #f18930; }
+
+.bottom-bar {
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px; }
+
+.bottom-bar p {
+  color: #343434;
+  margin: 0;
+  font-size: 16px; }
 
 body {
   background-color: #f0f0f0; }
@@ -710,6 +804,33 @@ body {
 
 .rutinas .rutinas-instrucciones-2 #img2 {
   transform: translateX(-40px) translateY(90px) rotate(-70deg); }
+
+#margen-ubicacion {
+  margin: 0;
+  padding: 0; }
+
+.ubicacion {
+  height: 650px;
+  display: flex;
+  justify-content: center; }
+  .ubicacion .ubicacion-info {
+    margin-top: 0px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .ubicacion .ubicacion-contenedor {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightblue;
+    border-radius: 25px; }
+    .ubicacion .ubicacion-contenedor iframe {
+      width: 95%;
+      border-radius: 25px; }
 
 @media screen and (max-width: 1023px) {
   /*NUTRICION INFO PRINC*/
