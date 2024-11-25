@@ -47,7 +47,7 @@
   box-sizing: border-box; }
 
 .padre1 {
-  color: #000000;
+  color: #CD5C5C;
   animation: animacion-texto 2s;
   text-align: center; }
 
@@ -75,12 +75,12 @@ p {
   text-align: center; }
 
 .padre1 {
-  background-color: #ffffff;
+  background-color: #CD5C5C;
   width: 100%;
   border: 90px; }
 
 .padre2 {
-  background-color: #ffffff;
+  background-color: #CD5C5C;
   width: 100%; }
 
 .contvol {
@@ -141,7 +141,7 @@ p {
   bottom: 0;
   border-radius: 10%;
   border: 4px solid transparent;
-  background-image: linear-gradient(180deg, c, #800000);
+  background-image: linear-gradient(180deg, #692d2d, #800000);
   animation: rotate-border 3s linear infinite;
   z-index: 1; }
 
@@ -161,17 +161,14 @@ p {
   bottom: 5px;
   border-radius: 10%;
   background: #DC143C;
-  z-index: 1;
-  /* Evita cubrir el contenido interno */ }
+  z-index: 1; }
 
 .contvol-2 {
   background: #FF7F50;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* Para alinear los elementos verticalmente */
   align-items: center;
-  /* Centra el contenido */
   justify-content: center;
   overflow: hidden;
   height: 100%;
@@ -180,37 +177,29 @@ p {
   margin-top: 15px;
   border-radius: 10%;
   z-index: 0;
-  text-align: center;
-  /* Centra el texto */ }
+  text-align: center; }
 
 .contvol-2 h2 {
   color: white;
   font-size: 2em;
   position: relative;
-  /* Asegura visibilidad */
   z-index: 2;
-  /* Por encima del fondo animado */
   margin: 10px 0; }
 
 .contvol-2 p {
   color: white;
   font-size: 1em;
   position: relative;
-  /* Permite que el párrafo esté sobre los bordes animados */
   z-index: 2;
-  /* Igual que el título */
   margin: 10px 20px;
-  line-height: 1.5;
-  /* Mejora la legibilidad */ }
+  line-height: 1.5; }
 
 .contvol-2 img {
   position: relative;
   max-width: 100%;
   height: auto;
   z-index: 2;
-  /* La imagen también está por encima de los bordes animados */
-  border-radius: 10%;
-  /* Coincide con el borde del contenedor */ }
+  border-radius: 10%; }
 
 /* Bordes animados */
 .contvol-2::before {
@@ -222,11 +211,10 @@ p {
   bottom: 0;
   border-radius: 10%;
   border: 4px solid transparent;
-  background-image: linear-gradient(180deg, #963a3a, #800000);
+  background-image: linear-gradient(180deg, #692d2d, #800000);
   animation: rotate-border 3s linear infinite;
   z-index: 1; }
 
-/* Animación de rotación */
 @keyframes rotate-border {
   from {
     transform: rotate(0deg); }
@@ -242,17 +230,13 @@ p {
   bottom: 5px;
   border-radius: 10%;
   background: #DC143C;
-  z-index: 1;
-  /* Evita cubrir el contenido interno */ }
+  z-index: 1; }
 
 .contvol-3 {
-  background: #FF7F50;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* Para alinear los elementos verticalmente */
   align-items: center;
-  /* Centra el contenido */
   justify-content: center;
   overflow: hidden;
   height: 100%;
@@ -261,37 +245,29 @@ p {
   margin-top: 15px;
   border-radius: 10%;
   z-index: 0;
-  text-align: center;
-  /* Centra el texto */ }
+  text-align: center; }
 
 .contvol-3 h2 {
   color: white;
   font-size: 2em;
   position: relative;
-  /* Asegura visibilidad */
   z-index: 2;
-  /* Por encima del fondo animado */
   margin: 10px 0; }
 
 .contvol-3 p {
   color: white;
   font-size: 1em;
   position: relative;
-  /* Permite que el párrafo esté sobre los bordes animados */
   z-index: 2;
-  /* Igual que el título */
   margin: 10px 20px;
-  line-height: 1.5;
-  /* Mejora la legibilidad */ }
+  line-height: 1.5; }
 
 .contvol-3 img {
   position: relative;
   max-width: 100%;
   height: auto;
   z-index: 2;
-  /* La imagen también está por encima de los bordes animados */
-  border-radius: 10%;
-  /* Coincide con el borde del contenedor */ }
+  border-radius: 10%; }
 
 /* Bordes animados */
 .contvol-3::before {
@@ -303,11 +279,10 @@ p {
   bottom: 0;
   border-radius: 10%;
   border: 4px solid transparent;
-  background-image: linear-gradient(180deg, #963a3a, #800000);
+  background-image: linear-gradient(180deg, #692d2d, #800000);
   animation: rotate-border 3s linear infinite;
   z-index: 1; }
 
-/* Animación de rotación */
 @keyframes rotate-border {
   from {
     transform: rotate(0deg); }
@@ -326,6 +301,9 @@ p {
   z-index: 1;
   /* Evita cubrir el contenido interno */ }
 
+.contvol-4 {
+  background-color: #CD5C5C; }
+
 .img1 {
   border-radius: 15px; }
 
@@ -342,35 +320,39 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #CD5C5C; }
 
 .regoBR {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #CD5C5C; }
 
 .karchEEUU {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #CD5C5C; }
 
 .jugadores {
   text-align: center; }
 
 .canchas {
-  text-align: center; }
+  text-align: center;
+  background-color: #CD5C5C; }
 
 .mapa {
+  height: 900px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; }
+  background-color: #CD5C5C; }
 
 input {
   display: none; }
 
-.container {
+.contvol-5 {
+  background-color: #CD5C5C;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,7 +382,7 @@ input {
   position: relative;
   height: 600px;
   width: 400px;
-  background-color: #963a3a;
+  background-color: #B22222;
   border-radius: 10px;
   padding: 30px 35px;
   border: 2px solid #800000; }
