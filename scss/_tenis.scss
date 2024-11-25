@@ -1,3 +1,4 @@
+@import "footer";
 @import "menu";
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -13,6 +14,8 @@
 }
 
 .contenedorTe-grande-tenis{
+    background-color: rgb(243, 243, 243);
+    transition: box-shadow 1s ease;
     height: 600px;
     display: flex;
     justify-content: space-around;
@@ -46,6 +49,7 @@
             justify-content: center;
             h1{
                 font-size: 35px;
+                color: black;
             }
         }
         .contenedorTe-linea{
@@ -66,27 +70,22 @@
             margin-top: 80px;
             p{
                 font-size: 20px;
+                color: black;
             }
         }
         
     }
-}
-
-.contenedorTe-espacio-titulo{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .tituloTe-espacio{
-        color: black;
+    &:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
 }
+
 
 .contenedorTe-mejoras-imagnes{
     height: 650px;
     display: flex;
     flex-direction: row;
+    transition: box-shadow 1s ease;
     .contenedorTe-fila-mejoras{
         background-color: white;
         height: 100%;
@@ -144,47 +143,112 @@
 
     .contenedorColumnas{
         display: flex;
-        background-color: red;
-        
     }
 
-    .columna1{
+    .contenedorTe-columna1-mejoras{
         display: flex;
-        background-color: green;
         width: 50%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 100px;
 
-        .columna1-card1{
+        .contenedorTe-columna1-card1-mejoras{
             display: flex;
             height: 200px;
             width: 80%;
-            background-color: pink;
+            background-image: url(../assets/imagenes/reduceelestres.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+            transition: box-shadow 1s ease;
+            .contenedorTe-num-mejoras{
+                background-color: white;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                h1{
+                    align-items: center;
+                    color: black;
+                }
+            }
+            &:hover{
+                filter: saturate(200%);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            }
         }
 
-        .columna1-card2{
+        .contenedorTe-columna1-card2-mejoras{
             display: flex;
-            background-color: cyan;
             height: 200px;
             width: 80%;
+            background-image: url(../assets/imagenes/fortalecimientomuscularTe.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+            transition: box-shadow 1s ease;
+            .contenedorTe-num-mejoras{
+                background-color: white;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                h1{
+                    align-items: center;
+                    color: black;
+                }
+            }
+            &:hover{
+                filter: saturate(200%);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            }
         }
     }
     
-    .columna2{
+    .contenedorTe-columna2-mejoras{
         display: flex;
-        background-color: blue;
         width: 50%;
         justify-content: center;
         align-items: center;
 
-        .columna2-card{
+        .contenedorTe-columna2-card-mejoras{
             display: flex;
-            background-color: cyan;
             height: 200px;
             width: 80%;
+            background-image: url(../assets/imagenes/mejoradeequilibrioTe.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+            transition: box-shadow 1s ease;
+            .contenedorTe-num-mejoras{
+                background-color: white;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                h1{
+                    align-items: center;
+                    color: black;
+                }
+            }
+            &:hover{
+                filter: saturate(200%);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            }
         }
+    }
+    &:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -192,83 +256,31 @@
 
 /* mapa */
 
-.contenedorTe-grande-mapa{
-    width: 100%;
-    height: 400px;
+.contenedorTe-mapa{
+    height: 500px;
+    background-color: rgb(243, 243, 243);
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    .contenedorTe-mapa{
-        height: 450px;
-        width: 60%;
-        display: flex;
-        align-items: center;
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
+    justify-content: center;
+    transition: box-shadow 1s ease;
+    iframe{
+        width: 80%;
+        height: 80%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
-    .contenedorTe-text-mapa{
-        width: 40%;
-        height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-
-        .titulo-mapa{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            height: 50px;
-        }
-        .parrafo-mapa{
-            color: black;
-            
-
-        }
+    &:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
-
 }
+
 
 @media screen and (max-width: 1023px){
-    .contenedorTe-imagen1-info1{
-        height: 800px;
-        display: flex;
-        justify-content: center;
-        .contenedorTe-info1{
-            height: 500px;
-            width: 80%;
-            .contenedorTe-info1-p1{
-                margin-top: 50px;
-                color: black;
-            }
-        }
+    .contenedorTe-grande-tenis{
+        margin-bottom: 500px;
+    }
+    .contenedorTe-mapa{
+        margin-top: 600px;
     }
 
-    .contenedorTe-grande-tarjetas{
-        height: 1600px;
-        display: flex;
-        flex-wrap: wrap;
-        .tarjetaTe{
-            height: 400px;
-            width: 80%;
-        }
-    }
-
-    .contenedorTe-grande-mapa{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 50px;
-        background-color: #ebe6e6;
-        flex-wrap: wrap;
-        .contenedorTe-mapa{
-            width: 100%;
-            margin-left: 0px;
-        }
-        .contenedorTe-text-mapa{
-            margin-top: 20px;
-            margin-left: 0px;
-        }
-    }
 }
+
