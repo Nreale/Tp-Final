@@ -1256,17 +1256,17 @@ body {
     .link .link-imagen-6:hover {
       transform: scale(1.5); }
   .link .link-imagen-1 {
-    box-shadow: 0 0 15px blue; }
+    box-shadow: 0 0 15px #8f3457; }
   .link .link-imagen-2 {
-    box-shadow: 0 0 15px lightblue; }
+    box-shadow: 0 0 15px #0c9d96; }
   .link .link-imagen-3 {
-    box-shadow: 0 0 15px lightgreen; }
+    box-shadow: 0 0 15px #4c7d2b; }
   .link .link-imagen-4 {
-    box-shadow: 0 0 15px orange; }
+    box-shadow: 0 0 15px #eb6b22; }
   .link .link-imagen-5 {
-    box-shadow: 0 0 15px red; }
+    box-shadow: 0 0 15px #d1261c; }
   .link .link-imagen-6 {
-    box-shadow: 0 0 15px yellow; }
+    box-shadow: 0 0 15px #f19f33; }
 
 .linea {
   width: 100%;
