@@ -36,10 +36,27 @@
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
       border: solid #25645a 1px; }
+    .maslogos button a {
+      display: flex;
+      text-decoration: none;
+      align-items: center; }
     .maslogos button p {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 * {
   padding: 0;
@@ -163,10 +180,27 @@ h3 {
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
       border: solid #25645a 1px; }
+    .maslogos button a {
+      display: flex;
+      text-decoration: none;
+      align-items: center; }
     .maslogos button p {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 * {
   padding: 0;
@@ -422,10 +456,27 @@ h3 {
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
       border: solid #25645a 1px; }
+    .maslogos button a {
+      display: flex;
+      text-decoration: none;
+      align-items: center; }
     .maslogos button p {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 * {
   margin: 0;
@@ -451,12 +502,9 @@ h3 {
   background-color: #FF4500;
   margin-left: 40px; }
 
-<<<<<<< HEAD
-=======
 .marco-bas {
   margin: auto; }
 
->>>>>>> 62b9a477568041508da137db27f641d38830544f
 .container {
   font-family: sans-serif;
   display: flex;
@@ -466,64 +514,6 @@ h3 {
   overflow: hidden;
   transform: skew(5deg); }
 
-<<<<<<< HEAD
-.card {
-  flex: 1;
-  transition: all 1s ease-in-out;
-  height: 75vmin;
-  position: relative; }
-
-.car__head {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  min-width: 100%;
-  background: #ff1eadbf;
-  color: black;
-  padding: 0.5em;
-  transform: rotate(-90deg);
-  transform-origin: 0% 0%;
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  font-size: 1em;
-  white-space: nowrap; }
-
-.card img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  transition: all 1s ease-in-out;
-  filter: grayscale(100%); }
-
-.card:not(:nth-child(5)) {
-  margin-right: 1em; }
-
-.card:hover {
-  flex-grow: 10; }
-
-.card:hover img {
-  filter: grayscale(0); }
-
-.card:hover .card__head {
-  text-align: center;
-  top: calc(100% - 2em);
-  background: #00000080;
-  color: white;
-  font-size: 2em;
-  transform: rotate(0deg) skew(-5deg); }
-
-.carrusel {
-  height: 550px;
-  width: 800px;
-  text-align: center;
-  margin-left: 400px; }
-
-.carruselimg {
-  margin-right: 410px;
-  height: 800px;
-  margin-top: -50px; }
-
-=======
 .carrusel {
   height: 250px;
   width: 250px; }
@@ -586,7 +576,6 @@ h1{
     font-size: 10px;
     text-align: center;
 }*/
->>>>>>> 62b9a477568041508da137db27f641d38830544f
 footer {
   background: #343434;
   padding-top: 50px; }
@@ -705,10 +694,27 @@ h3 {
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
       border: solid #25645a 1px; }
+    .maslogos button a {
+      display: flex;
+      text-decoration: none;
+      align-items: center; }
     .maslogos button p {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 * {
   padding: 0;
@@ -1027,10 +1033,27 @@ body {
     .maslogos button:hover {
       background: linear-gradient(to right, #0e788d85, #19ffff98);
       border: solid #25645a 1px; }
+    .maslogos button a {
+      display: flex;
+      text-decoration: none;
+      align-items: center; }
     .maslogos button p {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 .Ho-cont1 {
   display: flex;
@@ -1171,6 +1194,16 @@ body {
   .tarjeta:hover .tarjeta-contenido .tarjeta-titulo {
     transform: translateY(-5px);
     /* El título se mueve ligeramente hacia arriba */ }
+
+@media screen and (max-width: 1023px) {
+  .contCardHo {
+    flex-direction: column; }
+  .Ho-contHijo1 {
+    width: 80%;
+    height: 100%; }
+  .Ho-contcolum {
+    flex-direction: column;
+    align-items: center; } }
 
 * {
   margin: 0;

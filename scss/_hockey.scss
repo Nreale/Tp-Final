@@ -173,3 +173,17 @@
     }
   }
   
+  @media screen and (max-width: 1023px){
+    .contCardHo{
+      flex-direction: column;
+    }
+
+    .Ho-contHijo1{
+      width: 80%;
+      height: 100%;
+    }
+    .Ho-contcolum{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
