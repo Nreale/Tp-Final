@@ -66,8 +66,9 @@ body{
     }
 }
 
-#compensacion{
-    margin-top: 0px;
+#margen-dietas{
+    margin: 0;
+    padding: 0;
 }
 
 .dietas{
@@ -142,12 +143,12 @@ body{
     }
 }
 
-footer{
-    height: 700px;
-    background-color: aquamarine;
-}
+
 
 @media screen and (max-width: 1023px){
+
+    /*NUTRICION INFO PRINC*/
+
     .nutricion{
         height: 550px;
         .nutricion-info{
@@ -166,6 +167,38 @@ footer{
                 height: 250px;
             }
             
+        }
+    }
+
+    /*DIETAS*/
+
+    .dietas{
+        height: 3300px;
+        .dietas-info{
+            .dietas-info-pez{
+                img{
+                    height: 1px;
+                }
+            }
+            .dietas-info-tituyparraf{
+            }
+        }
+        .dietas-recetas{
+            display: block;
+            img{
+                height: 1px;
+            }
+            .dietas-recetas-receta{
+                height: 650px; 
+            }
+        }
+        .dietas-recetas-2{
+            #img1{
+                height: 1px;
+            }
+            #img2{
+                height: 1px;
+            }
         }
     }
 }

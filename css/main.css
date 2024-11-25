@@ -521,8 +521,9 @@ body {
       margin-top: 10px;
       height: 40%; }
 
-#compensacion {
-  margin-top: 0px; }
+#margen-dietas {
+  margin: 0;
+  padding: 0; }
 
 .dietas {
   overflow-x: hidden;
@@ -578,11 +579,8 @@ body {
   .dietas .dietas-recetas-2 #img2 {
     transform: translateX(-40px) translateY(90px) rotate(0deg); }
 
-footer {
-  height: 700px;
-  background-color: aquamarine; }
-
 @media screen and (max-width: 1023px) {
+  /*NUTRICION INFO PRINC*/
   .nutricion {
     height: 550px; }
     .nutricion .nutricion-info {
@@ -594,7 +592,22 @@ footer {
       .nutricion .nutricion-info p {
         text-align: center; }
     .nutricion .nutricion-carrousel img {
-      height: 250px; } }
+      height: 250px; }
+  /*DIETAS*/
+  .dietas {
+    height: 3300px; }
+    .dietas .dietas-info .dietas-info-pez img {
+      height: 1px; }
+    .dietas .dietas-recetas, .dietas .dietas-recetas-2 {
+      display: block; }
+      .dietas .dietas-recetas img, .dietas .dietas-recetas-2 img {
+        height: 1px; }
+      .dietas .dietas-recetas .dietas-recetas-receta, .dietas .dietas-recetas-2 .dietas-recetas-receta {
+        height: 650px; }
+    .dietas .dietas-recetas-2 #img1 {
+      height: 1px; }
+    .dietas .dietas-recetas-2 #img2 {
+      height: 1px; } }
 
 * {
   padding: 0;
