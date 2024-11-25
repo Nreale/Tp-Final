@@ -1,12 +1,13 @@
 @import "menu";
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import "footer";
 *{
     margin: 0;
     border: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
 .padre1{
     justify-content: space-between;
     display: flex;
@@ -25,25 +26,18 @@
     background-color: #FF4500;
     margin-left: 40px;
 }
-
 .marco-bas{
     margin: auto;
 }
 
-.container{
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10vmin;
-    overflow: hidden;
-    transform: skew(5deg);
-
+.carrusel{
+    height: 200px;
+    width: 220px;
 }
 
-.carrusel{
-    height: 250px;
-    width: 250px;
+.carrusel-img{
+    height: 200px;
+    width: 180px;
 }
 
 
@@ -101,23 +95,20 @@
     transform: rotate(0deg) skew(-5deg);
 }
 
-h1{
-    font-size: 10px;
-    text-align: center;
-}*/
+*/
 
 
 footer{
     background: #343434;
     padding-top: 50px;
 }
-.container{
+.footer1-container{
     width: 1140px;
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.footer-content{
+.footer2-content{
     width: 33.5%;
 }
 h3{
@@ -125,7 +116,7 @@ h3{
     margin-bottom: 15px;
     text-align: center;
 }
-.footer-content p{
+.footer3-content p{
     width: 190px;
     margin: auto;
     padding: 7px;
@@ -172,10 +163,10 @@ h3{
     color: rgb(175, 50, 50);
     padding: 25px;
 }
-.a-footer{
+a{
     text-decoration: none;
 }
-.a-footer:hover{
+a:hover{
     color: #f18930;
 }
 

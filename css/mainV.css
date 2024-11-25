@@ -40,6 +40,106 @@
       margin: 4px 0px 6px 5px;
       color: black; }
 
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background: #343434;
+  padding-top: 50px; }
+
+.container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.footer-content {
+  width: 33.5%; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center; }
+
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px; }
+
+.footer-content ul {
+  text-align: center; }
+
+.list {
+  padding: 0; }
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative; }
+
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s; }
+
+.list li:hover::before {
+  width: 70px; }
+
+.social-icons {
+  text-align: center;
+  padding: 0; }
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px; }
+
+.social-icons i {
+  color: #af3232;
+  padding: 25px; }
+
+.a-footer {
+  text-decoration: none; }
+
+.a-footer:hover {
+  color: #f18930; }
+
+.social-icons i:hover {
+  color: #f18930; }
+
+.bottom-bar {
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px; }
+
+.bottom-bar p {
+  color: #343434;
+  margin: 0;
+  font-size: 16px; }
+
 * {
   margin: 0;
   border: 0;
@@ -348,17 +448,12 @@ p {
   justify-content: center;
   background-color: #CD5C5C; }
 
-input {
-  display: none; }
-
 .contvol-5 {
   background-color: #CD5C5C;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  flex-direction: column;
-  margin: 100px 0px 0px 100px; }
+  width: 90%;
+  height: 9%; }
 
 .cards {
   position: relative;
