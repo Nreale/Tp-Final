@@ -41,6 +41,19 @@
       margin: 4px 0px 6px 5px;
       color: black; }
 
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -167,6 +180,19 @@ h3 {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 * {
   padding: 0;
@@ -427,6 +453,19 @@ h3 {
       margin: 4px 0px 6px 5px;
       color: black; }
 
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
+
 * {
   margin: 0;
   border: 0;
@@ -451,12 +490,9 @@ h3 {
   background-color: #FF4500;
   margin-left: 40px; }
 
-<<<<<<< HEAD
-=======
 .marco-bas {
   margin: auto; }
 
->>>>>>> 62b9a477568041508da137db27f641d38830544f
 .container {
   font-family: sans-serif;
   display: flex;
@@ -466,64 +502,6 @@ h3 {
   overflow: hidden;
   transform: skew(5deg); }
 
-<<<<<<< HEAD
-.card {
-  flex: 1;
-  transition: all 1s ease-in-out;
-  height: 75vmin;
-  position: relative; }
-
-.car__head {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  min-width: 100%;
-  background: #ff1eadbf;
-  color: black;
-  padding: 0.5em;
-  transform: rotate(-90deg);
-  transform-origin: 0% 0%;
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  font-size: 1em;
-  white-space: nowrap; }
-
-.card img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  transition: all 1s ease-in-out;
-  filter: grayscale(100%); }
-
-.card:not(:nth-child(5)) {
-  margin-right: 1em; }
-
-.card:hover {
-  flex-grow: 10; }
-
-.card:hover img {
-  filter: grayscale(0); }
-
-.card:hover .card__head {
-  text-align: center;
-  top: calc(100% - 2em);
-  background: #00000080;
-  color: white;
-  font-size: 2em;
-  transform: rotate(0deg) skew(-5deg); }
-
-.carrusel {
-  height: 550px;
-  width: 800px;
-  text-align: center;
-  margin-left: 400px; }
-
-.carruselimg {
-  margin-right: 410px;
-  height: 800px;
-  margin-top: -50px; }
-
-=======
 .carrusel {
   height: 250px;
   width: 250px; }
@@ -586,7 +564,6 @@ h1{
     font-size: 10px;
     text-align: center;
 }*/
->>>>>>> 62b9a477568041508da137db27f641d38830544f
 footer {
   background: #343434;
   padding-top: 50px; }
@@ -710,6 +687,19 @@ h3 {
       margin: 4px 0px 6px 5px;
       color: black; }
 
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -829,20 +819,20 @@ body {
     height: 400px;
     border-radius: 25px; }
 
-.tarjetas {
+.secciones {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   column-gap: 30px; }
-  .tarjetas .tarjetas-titulo {
+  .secciones .secciones-titulo {
     margin: 50px 0px 50px 0px;
     text-align: center; }
-    .tarjetas .tarjetas-titulo h2 {
+    .secciones .secciones-titulo h2 {
       font-size: 35px; }
-  .tarjetas .tarjetas-tarjeta {
-    height: 400px; }
-    .tarjetas .tarjetas-tarjeta img {
+  .secciones .secciones-tarjeta {
+    height: 500px; }
+    .secciones .secciones-tarjeta img {
       margin-top: 10px;
       height: 40%; }
 
@@ -1031,6 +1021,19 @@ body {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .logoP img, .maslogos img {
+    width: 150px;
+    height: 150px; }
+  .logoP h1, .maslogos h1 {
+    font-size: 26px; }
+  .maslogos img {
+    width: 30px;
+    height: 30px; }
+  .maslogos button p {
+    font-size: 12px; } }
 
 .Ho-cont1 {
   display: flex;

@@ -326,17 +326,11 @@ p{
   background-color: #CD5C5C;
 }
 
-input {
-    display: none;
-  }
-  .contvol-5 {
+.contvol-5 {
     background-color: #CD5C5C;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    flex-direction: column;
-    margin: 100px 0px 0px 100px;
+    margin-left: 100%;
   }
   .cards {
     position: relative;
