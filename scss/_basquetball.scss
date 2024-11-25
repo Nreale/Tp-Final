@@ -3,7 +3,6 @@
 
 *{
     margin: 0;
-
     border: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -27,6 +26,10 @@
     margin-left: 40px;
 }
 
+.marco-bas{
+    margin: auto;
+}
+
 .container{
     font-family: sans-serif;
     display: flex;
@@ -35,13 +38,21 @@
     margin: 10vmin;
     overflow: hidden;
     transform: skew(5deg);
+
 }
 
-.card{
+.carrusel{
+    height: 250px;
+    width: 250px;
+}
+
+
+/*.card{
     flex: 1;
     transition: all 1s ease-in-out;
     height: 75vmin;
     position: relative;
+
 
 }
 
@@ -90,18 +101,10 @@
     transform: rotate(0deg) skew(-5deg);
 }
 
-.carrusel {
-    height: 550px;
-    width: 800px;
+h1{
+    font-size: 10px;
     text-align: center;
-    margin-left: 400px; 
-}
-  
-  .carruselimg {
-    margin-right: 410px;
-    height: 800px;
-    margin-top: -50px; 
-}
+}*/
 
 
 footer{

@@ -451,6 +451,12 @@ h3 {
   background-color: #FF4500;
   margin-left: 40px; }
 
+<<<<<<< HEAD
+=======
+.marco-bas {
+  margin: auto; }
+
+>>>>>>> 62b9a477568041508da137db27f641d38830544f
 .container {
   font-family: sans-serif;
   display: flex;
@@ -460,6 +466,7 @@ h3 {
   overflow: hidden;
   transform: skew(5deg); }
 
+<<<<<<< HEAD
 .card {
   flex: 1;
   transition: all 1s ease-in-out;
@@ -516,6 +523,70 @@ h3 {
   height: 800px;
   margin-top: -50px; }
 
+=======
+.carrusel {
+  height: 250px;
+  width: 250px; }
+
+/*.card{
+    flex: 1;
+    transition: all 1s ease-in-out;
+    height: 75vmin;
+    position: relative;
+
+
+}
+
+.car__head{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    background: #ff1eadbf;
+    color: black;
+    padding: 0.5em;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.card img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.card:not(:nth-child(5)){
+    margin-right: 1em;
+}
+
+.card:hover{
+    flex-grow: 10;
+}
+
+.card:hover img{
+    filter: grayscale(0);
+}
+
+.card:hover .card__head{
+    text-align: center;
+    top: calc(100% - 2em);
+    background: #00000080;
+    color: white;
+    font-size: 2em;
+    transform: rotate(0deg) skew(-5deg);
+}
+
+h1{
+    font-size: 10px;
+    text-align: center;
+}*/
+>>>>>>> 62b9a477568041508da137db27f641d38830544f
 footer {
   background: #343434;
   padding-top: 50px; }
@@ -638,6 +709,93 @@ h3 {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background: #343434;
+  padding-top: 50px; }
+
+.container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.footer-content {
+  width: 33.5%; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center; }
+
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px; }
+
+.footer-content ul {
+  text-align: center; }
+
+.list {
+  padding: 0; }
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative; }
+
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s; }
+
+.list li:hover::before {
+  width: 70px; }
+
+.social-icons {
+  text-align: center;
+  padding: 0; }
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px; }
+
+.social-icons i {
+  color: #af3232;
+  padding: 25px; }
+
+.a-footer {
+  text-decoration: none; }
+
+.a-footer:hover {
+  color: #f18930; }
+
+.social-icons i:hover {
+  color: #f18930; }
+
+.bottom-bar {
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px; }
+
+.bottom-bar p {
+  color: #343434;
+  margin: 0;
+  font-size: 16px; }
 
 body {
   background-color: #f0f0f0; }
@@ -776,6 +934,33 @@ body {
 
 .rutinas .rutinas-instrucciones-2 #img2 {
   transform: translateX(-40px) translateY(90px) rotate(-70deg); }
+
+#margen-ubicacion {
+  margin: 0;
+  padding: 0; }
+
+.ubicacion {
+  height: 650px;
+  display: flex;
+  justify-content: center; }
+  .ubicacion .ubicacion-info {
+    margin-top: 0px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .ubicacion .ubicacion-contenedor {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightblue;
+    border-radius: 25px; }
+    .ubicacion .ubicacion-contenedor iframe {
+      width: 95%;
+      border-radius: 25px; }
 
 @media screen and (max-width: 1023px) {
   /*NUTRICION INFO PRINC*/
@@ -1133,17 +1318,17 @@ body {
     .link .link-imagen-6:hover {
       transform: scale(1.5); }
   .link .link-imagen-1 {
-    box-shadow: 0 0 15px blue; }
+    box-shadow: 0 0 15px #8f3457; }
   .link .link-imagen-2 {
-    box-shadow: 0 0 15px lightblue; }
+    box-shadow: 0 0 15px #0c9d96; }
   .link .link-imagen-3 {
-    box-shadow: 0 0 15px lightgreen; }
+    box-shadow: 0 0 15px #4c7d2b; }
   .link .link-imagen-4 {
-    box-shadow: 0 0 15px orange; }
+    box-shadow: 0 0 15px #eb6b22; }
   .link .link-imagen-5 {
-    box-shadow: 0 0 15px red; }
+    box-shadow: 0 0 15px #d1261c; }
   .link .link-imagen-6 {
-    box-shadow: 0 0 15px yellow; }
+    box-shadow: 0 0 15px #f19f33; }
 
 .linea {
   width: 100%;
