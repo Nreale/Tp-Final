@@ -45,20 +45,20 @@ body{
 
 
 
-.tarjetas{
+.secciones{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     column-gap: 30px;
-    .tarjetas-titulo{
+    .secciones-titulo{
         margin: 50px 0px 50px 0px;
         text-align: center;
         h2{
             font-size: 35px;
         }
     }
-    .tarjetas-tarjeta{
+    .secciones-tarjeta{
         height: 400px;
         img{
             margin-top: 10px;
