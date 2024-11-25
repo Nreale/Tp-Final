@@ -1,2 +1,32 @@
 @import "menu";
 
+.Ho-cont1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/imagenes/natP.png) no-repeat center center fixed;
+    background-size: cover;
+    border-top: 1px solid #0e788d85;
+}
+
+
+.Ho-contHijo1{
+    display: flex;
+    width: 52%;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin: 50px 0px 30px 10px;
+    box-shadow: 1px 1px 5px 1px;
+    border-radius: 10px;
+    text-align: center;
+    h2{
+      margin: 10px 0px 0px 0px;
+    }
+    p{
+        margin: 20px 20px 20px 20px;
+        font-size: 20px;
+    }
+}
