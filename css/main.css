@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Griffy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
@@ -39,6 +40,93 @@
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background: #343434;
+  padding-top: 50px; }
+
+.container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.footer-content {
+  width: 33.5%; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center; }
+
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px; }
+
+.footer-content ul {
+  text-align: center; }
+
+.list {
+  padding: 0; }
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative; }
+
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s; }
+
+.list li:hover::before {
+  width: 70px; }
+
+.social-icons {
+  text-align: center;
+  padding: 0; }
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px; }
+
+.social-icons i {
+  color: #af3232;
+  padding: 25px; }
+
+.a-footer {
+  text-decoration: none; }
+
+.a-footer:hover {
+  color: #f18930; }
+
+.social-icons i:hover {
+  color: #f18930; }
+
+.bottom-bar {
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px; }
+
+.bottom-bar p {
+  color: #343434;
+  margin: 0;
+  font-size: 16px; }
 
 * {
   padding: 0;
@@ -90,6 +178,8 @@
   margin: 0; }
 
 .contenedorTe-grande-tenis {
+  background-color: #f3f3f3;
+  transition: box-shadow 1s ease;
   height: 600px;
   display: flex;
   justify-content: space-around;
@@ -117,7 +207,8 @@
       display: flex;
       justify-content: center; }
       .contenedorTe-grande-tenis .contenedorTe-text-tenis .tituloTe-tenis h1 {
-        font-size: 35px; }
+        font-size: 35px;
+        color: black; }
     .contenedorTe-grande-tenis .contenedorTe-text-tenis .contenedorTe-linea {
       height: 5px;
       display: flex;
@@ -133,21 +224,16 @@
       text-align: center;
       margin-top: 80px; }
       .contenedorTe-grande-tenis .contenedorTe-text-tenis .parrafoTe-tenis p {
-        font-size: 20px; }
-
-.contenedorTe-espacio-titulo {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .contenedorTe-espacio-titulo .tituloTe-espacio {
-    color: black; }
+        font-size: 20px;
+        color: black; }
+  .contenedorTe-grande-tenis:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
 
 .contenedorTe-mejoras-imagnes {
   height: 650px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  transition: box-shadow 1s ease; }
   .contenedorTe-mejoras-imagnes .contenedorTe-fila-mejoras {
     background-color: white;
     height: 100%;
@@ -192,98 +278,114 @@
         .contenedorTe-mejoras-imagnes .contenedorTe-fila-mejoras .contenedorTe-fila .contenedorTe-mejoras:hover {
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
   .contenedorTe-mejoras-imagnes .contenedorColumnas {
+    display: flex; }
+  .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras {
     display: flex;
-    background-color: red; }
-  .contenedorTe-mejoras-imagnes .columna1 {
-    display: flex;
-    background-color: green;
     width: 50%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 100px; }
-    .contenedorTe-mejoras-imagnes .columna1 .columna1-card1 {
+    .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card1-mejoras {
       display: flex;
       height: 200px;
       width: 80%;
-      background-color: pink; }
-    .contenedorTe-mejoras-imagnes .columna1 .columna1-card2 {
+      background-image: url(../assets/imagenes/reduceelestres.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      transition: box-shadow 1s ease; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card1-mejoras .contenedorTe-num-mejoras {
+        background-color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 50%; }
+        .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card1-mejoras .contenedorTe-num-mejoras h1 {
+          align-items: center;
+          color: black; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card1-mejoras:hover {
+        filter: saturate(200%);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+    .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card2-mejoras {
       display: flex;
-      background-color: cyan;
       height: 200px;
-      width: 80%; }
-  .contenedorTe-mejoras-imagnes .columna2 {
+      width: 80%;
+      background-image: url(../assets/imagenes/fortalecimientomuscularTe.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      transition: box-shadow 1s ease; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card2-mejoras .contenedorTe-num-mejoras {
+        background-color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 50%; }
+        .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card2-mejoras .contenedorTe-num-mejoras h1 {
+          align-items: center;
+          color: black; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna1-mejoras .contenedorTe-columna1-card2-mejoras:hover {
+        filter: saturate(200%);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+  .contenedorTe-mejoras-imagnes .contenedorTe-columna2-mejoras {
     display: flex;
-    background-color: blue;
     width: 50%;
     justify-content: center;
     align-items: center; }
-    .contenedorTe-mejoras-imagnes .columna2 .columna2-card {
+    .contenedorTe-mejoras-imagnes .contenedorTe-columna2-mejoras .contenedorTe-columna2-card-mejoras {
       display: flex;
-      background-color: cyan;
       height: 200px;
-      width: 80%; }
+      width: 80%;
+      background-image: url(../assets/imagenes/mejoradeequilibrioTe.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      transition: box-shadow 1s ease; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna2-mejoras .contenedorTe-columna2-card-mejoras .contenedorTe-num-mejoras {
+        background-color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 50%; }
+        .contenedorTe-mejoras-imagnes .contenedorTe-columna2-mejoras .contenedorTe-columna2-card-mejoras .contenedorTe-num-mejoras h1 {
+          align-items: center;
+          color: black; }
+      .contenedorTe-mejoras-imagnes .contenedorTe-columna2-mejoras .contenedorTe-columna2-card-mejoras:hover {
+        filter: saturate(200%);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+  .contenedorTe-mejoras-imagnes:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
 
 /* mapa */
-.contenedorTe-grande-mapa {
-  width: 100%;
-  height: 400px;
+.contenedorTe-mapa {
+  height: 500px;
+  background-color: #f3f3f3;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .contenedorTe-grande-mapa .contenedorTe-mapa {
-    height: 450px;
-    width: 60%;
-    display: flex;
-    align-items: center; }
-    .contenedorTe-grande-mapa .contenedorTe-mapa iframe {
-      width: 100%;
-      height: 100%; }
-  .contenedorTe-grande-mapa .contenedorTe-text-mapa {
-    width: 40%;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap; }
-    .contenedorTe-grande-mapa .contenedorTe-text-mapa .titulo-mapa {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      height: 50px; }
-    .contenedorTe-grande-mapa .contenedorTe-text-mapa .parrafo-mapa {
-      color: black; }
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 1s ease; }
+  .contenedorTe-mapa iframe {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+  .contenedorTe-mapa:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 1023px) {
-  .contenedorTe-imagen1-info1 {
-    height: 800px;
-    display: flex;
-    justify-content: center; }
-    .contenedorTe-imagen1-info1 .contenedorTe-info1 {
-      height: 500px;
-      width: 80%; }
-      .contenedorTe-imagen1-info1 .contenedorTe-info1 .contenedorTe-info1-p1 {
-        margin-top: 50px;
-        color: black; }
-  .contenedorTe-grande-tarjetas {
-    height: 1600px;
-    display: flex;
-    flex-wrap: wrap; }
-    .contenedorTe-grande-tarjetas .tarjetaTe {
-      height: 400px;
-      width: 80%; }
-  .contenedorTe-grande-mapa {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 50px;
-    background-color: #ebe6e6;
-    flex-wrap: wrap; }
-    .contenedorTe-grande-mapa .contenedorTe-mapa {
-      width: 100%;
-      margin-left: 0px; }
-    .contenedorTe-grande-mapa .contenedorTe-text-mapa {
-      margin-top: 20px;
-      margin-left: 0px; } }
+  .contenedorTe-grande-tenis {
+    margin-bottom: 500px; }
+  .contenedorTe-mapa {
+    margin-top: 600px; } }
 
 * {
   padding: 0;
@@ -581,15 +683,16 @@ body {
 
 .rutinas .rutinas-info .rutinas-info-img1 img {
   height: 100%;
-  transform: translateX(-300px) translateY(40px) rotate(45deg); }
+  transform: translateX(-300px) translateY(40px) rotate(0deg); }
 
 .rutinas .rutinas-info .rutinas-info-tituyparraf h2 {
   margin: 50px; }
 
 .rutinas .rutinas-instrucciones img, .rutinas .rutinas-instrucciones-2 img {
-  transform: translateX(-60px) translateY(40px) rotate(-50deg); }
+  transform: translateX(-60px) translateY(40px) rotate(20deg); }
 
 .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso {
+  height: 650px;
   background-color: #3e3ea1; }
   .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso li, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso li {
     margin: 0px 10px 0px 50px;
@@ -604,10 +707,10 @@ body {
       color: white; }
 
 .rutinas .rutinas-instrucciones-2 #img1 {
-  transform: translateX(-320px) translateY(40px) rotate(100deg); }
+  transform: translateX(-320px) translateY(40px) rotate(40deg); }
 
 .rutinas .rutinas-instrucciones-2 #img2 {
-  transform: translateX(-40px) translateY(90px) rotate(0deg); }
+  transform: translateX(-40px) translateY(90px) rotate(-70deg); }
 
 @media screen and (max-width: 1023px) {
   /*NUTRICION INFO PRINC*/
@@ -684,7 +787,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../assets/imagenes/natP.png) no-repeat center center fixed;
+  background: url(../assets/imagenes/hockeyfondo.png) no-repeat center center fixed;
   background-size: cover;
   border-top: 1px solid #0e788d85; }
 
@@ -696,14 +799,128 @@ body {
   align-items: center;
   backdrop-filter: blur(10px);
   margin: 50px 0px 30px 10px;
-  box-shadow: 1px 1px 5px 1px;
+  box-shadow: 1px 1px 5px 1px white;
   border-radius: 10px;
   text-align: center; }
   .Ho-contHijo1 h2 {
-    margin: 10px 0px 0px 0px; }
+    margin: 10px 0px 0px 0px;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
   .Ho-contHijo1 p {
     margin: 20px 20px 20px 20px;
-    font-size: 20px; }
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+
+/* Puntos de Actividad */
+.contFut-grande-mapaHo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0px 0px 0px;
+  backdrop-filter: blur(50px); }
+  .contFut-grande-mapaHo h1 {
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 0px 0px; }
+  .contFut-grande-mapaHo .lineaHo {
+    width: 30%;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin-bottom: 30px; }
+  .contFut-grande-mapaHo .contfut-mapaHo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0px 0px 60px 0px; }
+    .contFut-grande-mapaHo .contfut-mapaHo iframe {
+      width: 100%; }
+
+/*IMPORTANTE: TARJETA NUEVA SCSS*/
+.contCardHo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 30px 0px 30px 0px; }
+
+.cardHo {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(235, 235, 235, 0.35);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: white;
+  background: rgba(187, 205, 189, 0.25);
+  transition: all 0.8s ease;
+  overflow: hidden;
+  height: auto;
+  max-height: 200px; }
+  .cardHo:hover {
+    max-height: 500px;
+    background: rgba(187, 205, 189, 0.55); }
+    .cardHo:hover .texto {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); }
+  .cardHo .containerHo {
+    position: relative; }
+    .cardHo .containerHo .texto {
+      padding: 1em;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease; }
+      .cardHo .containerHo .texto .texto-explicativo {
+        margin-top: 0.5em; }
+    .cardHo .containerHo img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      height: auto;
+      border-radius: 20px; }
+
+/* Beneficios */
+.tarjeta {
+  display: flex;
+  background-color: #444;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 450px;
+  /* Ampliamos el ancho de la tarjeta */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  /* Animación para la expansión */ }
+  .tarjeta .tarjeta-imagen {
+    width: 150px;
+    object-fit: cover; }
+  .tarjeta .tarjeta-contenido {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; }
+    .tarjeta .tarjeta-contenido .tarjeta-titulo {
+      font-size: 1.25rem;
+      margin: 0;
+      transition: transform 0.3s ease-in-out;
+      /* Animación para el título */ }
+    .tarjeta .tarjeta-contenido .tarjeta-descripcion {
+      font-size: 0.875rem;
+      margin: 8px 0;
+      color: #ccc; }
+  .tarjeta:hover {
+    transform: scale(1.05);
+    /* Agrandar la tarjeta cuando se pasa el mouse */ }
+  .tarjeta:hover .tarjeta-contenido .tarjeta-titulo {
+    transform: translateY(-5px);
+    /* El título se mueve ligeramente hacia arriba */ }
 
 * {
   margin: 0;

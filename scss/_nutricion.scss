@@ -157,7 +157,7 @@ body{
             @extend .dietas-info-pez;
             img{
                 height: 100%;
-                transform: translateX(-300px) translateY(40px) rotate(45deg); 
+                transform: translateX(-300px) translateY(40px) rotate(0deg); 
             }
         }
         .rutinas-info-tituyparraf{
@@ -171,13 +171,14 @@ body{
     .rutinas-instrucciones{
         @extend .dietas-recetas;
         img{
-            transform: translateX(-60px) translateY(40px) rotate(-50deg); 
+            transform: translateX(-60px) translateY(40px) rotate(20deg); 
         }
         .rutinas-instrucciones-pasoapaso{
             li{
                 margin: 0px 10px 0px 50px;
                 text-align: start
             }
+            height: 650px;
             @extend .dietas-recetas-receta;
             background-color: #3e3ea1;
             h3{
@@ -196,10 +197,10 @@ body{
     .rutinas-instrucciones-2{
         @extend .rutinas-instrucciones;
         #img1{
-            transform: translateX(-320px) translateY(40px) rotate(100deg); 
+            transform: translateX(-320px) translateY(40px) rotate(40deg); 
         }
         #img2{
-            transform: translateX(-40px) translateY(90px) rotate(00deg); 
+            transform: translateX(-40px) translateY(90px) rotate(-70deg); 
         }
     }
 }
