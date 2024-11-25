@@ -428,10 +428,27 @@ h3 {
 
 * {
   margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: white; }
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
+
+.padre1 {
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  background: #FF7F32; }
+
+.Malone {
+  background-color: #FF4500;
+  margin-left: 20px; }
+
+.Barkley {
+  background-color: #FF4500;
+  margin-left: 10px; }
+
+.Jonh {
+  background-color: #FF4500;
+  margin-left: 40px; }
 
 footer {
   background: #343434;
@@ -588,13 +605,113 @@ body {
     height: 400px;
     border-radius: 25px; }
 
-.secciones {
+.tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 30px; }
+  .tarjetas .tarjetas-titulo {
+    margin: 50px 0px 50px 0px;
+    text-align: center; }
+    .tarjetas .tarjetas-titulo h2 {
+      font-size: 35px; }
+  .tarjetas .tarjetas-tarjeta {
+    height: 400px; }
+    .tarjetas .tarjetas-tarjeta img {
+      margin-top: 10px;
+      height: 40%; }
+
+#margen-dietas, #margen-rutinas {
+  margin: 0;
+  padding: 0; }
+
+.dietas, .rutinas {
+  overflow-x: hidden;
+  height: 1750px;
   margin: 50px 0px 50px 0px;
-  text-align: center; }
-  .secciones h2 {
-    font-size: 35px; }
+  display: flex;
+  justify-content: center; }
+  .dietas .dietas-info, .rutinas .dietas-info, .rutinas .rutinas-info {
+    margin: 50px 0px -100px 0px;
+    height: 300px;
+    display: flex; }
+    .dietas .dietas-info .dietas-info-pez, .rutinas .dietas-info .dietas-info-pez, .rutinas .rutinas-info .dietas-info-pez, .rutinas .rutinas-info .rutinas-info-img1 {
+      height: 500px; }
+      .dietas .dietas-info .dietas-info-pez img, .rutinas .dietas-info .dietas-info-pez img, .rutinas .rutinas-info .dietas-info-pez img, .rutinas .rutinas-info .rutinas-info-img1 img {
+        height: 100%;
+        transform: translateX(-300px) translateY(40px) rotate(45deg); }
+    .dietas .dietas-info .dietas-info-tituyparraf, .rutinas .dietas-info .dietas-info-tituyparraf, .rutinas .rutinas-info .dietas-info-tituyparraf, .rutinas .rutinas-info .rutinas-info-tituyparraf {
+      z-index: 2;
+      text-align: center;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .dietas .dietas-info .dietas-info-tituyparraf h2, .rutinas .dietas-info .dietas-info-tituyparraf h2, .rutinas .rutinas-info .dietas-info-tituyparraf h2, .rutinas .rutinas-info .rutinas-info-tituyparraf h2 {
+        margin: 50px; }
+  .dietas .dietas-recetas, .rutinas .dietas-recetas, .dietas .dietas-recetas-2, .rutinas .dietas-recetas-2, .rutinas .rutinas-instrucciones, .rutinas .rutinas-instrucciones-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px; }
+    .dietas .dietas-recetas img, .rutinas .dietas-recetas img, .dietas .dietas-recetas-2 img, .rutinas .dietas-recetas-2 img, .rutinas .rutinas-instrucciones img, .rutinas .rutinas-instrucciones-2 img {
+      transform: translateX(-60px) translateY(40px) rotate(-50deg); }
+    .dietas .dietas-recetas .dietas-recetas-receta, .rutinas .dietas-recetas .dietas-recetas-receta, .dietas .dietas-recetas-2 .dietas-recetas-receta, .rutinas .dietas-recetas-2 .dietas-recetas-receta, .rutinas .rutinas-instrucciones .dietas-recetas-receta, .rutinas .rutinas-instrucciones-2 .dietas-recetas-receta, .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso {
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+      background-color: seagreen;
+      border-radius: 25px;
+      justify-content: center;
+      text-align: center;
+      border: 4px solid white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+      .dietas .dietas-recetas .dietas-recetas-receta h3, .rutinas .dietas-recetas .dietas-recetas-receta h3, .dietas .dietas-recetas-2 .dietas-recetas-receta h3, .rutinas .dietas-recetas-2 .dietas-recetas-receta h3, .rutinas .rutinas-instrucciones .dietas-recetas-receta h3, .rutinas .rutinas-instrucciones-2 .dietas-recetas-receta h3, .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso h3, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso h3 {
+        margin-bottom: 30px;
+        color: white; }
+      .dietas .dietas-recetas .dietas-recetas-receta p, .rutinas .dietas-recetas .dietas-recetas-receta p, .dietas .dietas-recetas-2 .dietas-recetas-receta p, .rutinas .dietas-recetas-2 .dietas-recetas-receta p, .rutinas .rutinas-instrucciones .dietas-recetas-receta p, .rutinas .rutinas-instrucciones-2 .dietas-recetas-receta p, .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso p, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso p {
+        text-align: start;
+        margin: 0px 30px 0px 30px; }
+        .dietas .dietas-recetas .dietas-recetas-receta p strong, .rutinas .dietas-recetas .dietas-recetas-receta p strong, .dietas .dietas-recetas-2 .dietas-recetas-receta p strong, .rutinas .dietas-recetas-2 .dietas-recetas-receta p strong, .rutinas .rutinas-instrucciones .dietas-recetas-receta p strong, .rutinas .rutinas-instrucciones-2 .dietas-recetas-receta p strong, .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso p strong, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso p strong {
+          color: white; }
+  .dietas .dietas-recetas-2 #img1, .rutinas .dietas-recetas-2 #img1 {
+    transform: translateX(-320px) translateY(40px) rotate(100deg); }
+  .dietas .dietas-recetas-2 #img2, .rutinas .dietas-recetas-2 #img2 {
+    transform: translateX(-40px) translateY(90px) rotate(0deg); }
+
+.rutinas .rutinas-info .rutinas-info-img1 img {
+  height: 100%;
+  transform: translateX(-300px) translateY(40px) rotate(45deg); }
+
+.rutinas .rutinas-info .rutinas-info-tituyparraf h2 {
+  margin: 50px; }
+
+.rutinas .rutinas-instrucciones img, .rutinas .rutinas-instrucciones-2 img {
+  transform: translateX(-60px) translateY(40px) rotate(-50deg); }
+
+.rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso {
+  background-color: #3e3ea1; }
+  .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso li, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso li {
+    margin: 0px 10px 0px 50px;
+    text-align: start; }
+  .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso h3, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso h3 {
+    margin-bottom: 30px;
+    color: white; }
+  .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso p, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso p {
+    text-align: start;
+    margin: 0px 30px 0px 30px; }
+    .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso p strong, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso p strong {
+      color: white; }
+
+.rutinas .rutinas-instrucciones-2 #img1 {
+  transform: translateX(-320px) translateY(40px) rotate(100deg); }
+
+.rutinas .rutinas-instrucciones-2 #img2 {
+  transform: translateX(-40px) translateY(90px) rotate(0deg); }
 
 @media screen and (max-width: 1023px) {
+  /*NUTRICION INFO PRINC*/
   .nutricion {
     height: 550px; }
     .nutricion .nutricion-info {
@@ -606,7 +723,22 @@ body {
       .nutricion .nutricion-info p {
         text-align: center; }
     .nutricion .nutricion-carrousel img {
-      height: 250px; } }
+      height: 250px; }
+  /*DIETAS*/
+  .dietas, .rutinas {
+    height: 3300px; }
+    .dietas .dietas-info .dietas-info-pez img, .rutinas .dietas-info .dietas-info-pez img, .rutinas .rutinas-info .dietas-info-pez img, .rutinas .rutinas-info .rutinas-info-img1 img {
+      height: 1px; }
+    .dietas .dietas-recetas, .rutinas .dietas-recetas, .dietas .dietas-recetas-2, .rutinas .dietas-recetas-2, .rutinas .rutinas-instrucciones, .rutinas .rutinas-instrucciones-2 {
+      display: block; }
+      .dietas .dietas-recetas img, .rutinas .dietas-recetas img, .dietas .dietas-recetas-2 img, .rutinas .dietas-recetas-2 img, .rutinas .rutinas-instrucciones img, .rutinas .rutinas-instrucciones-2 img {
+        height: 1px; }
+      .dietas .dietas-recetas .dietas-recetas-receta, .rutinas .dietas-recetas .dietas-recetas-receta, .dietas .dietas-recetas-2 .dietas-recetas-receta, .rutinas .dietas-recetas-2 .dietas-recetas-receta, .rutinas .rutinas-instrucciones .dietas-recetas-receta, .rutinas .rutinas-instrucciones-2 .dietas-recetas-receta, .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso {
+        height: 650px; }
+    .dietas .dietas-recetas-2 #img1, .rutinas .dietas-recetas-2 #img1 {
+      height: 1px; }
+    .dietas .dietas-recetas-2 #img2, .rutinas .dietas-recetas-2 #img2 {
+      height: 1px; } }
 
 * {
   padding: 0;
@@ -647,6 +779,32 @@ body {
       font-size: 16px;
       margin: 4px 0px 6px 5px;
       color: black; }
+
+.Ho-cont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/imagenes/natP.png) no-repeat center center fixed;
+  background-size: cover;
+  border-top: 1px solid #0e788d85; }
+
+.Ho-contHijo1 {
+  display: flex;
+  width: 52%;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  margin: 50px 0px 30px 10px;
+  box-shadow: 1px 1px 5px 1px;
+  border-radius: 10px;
+  text-align: center; }
+  .Ho-contHijo1 h2 {
+    margin: 10px 0px 0px 0px; }
+  .Ho-contHijo1 p {
+    margin: 20px 20px 20px 20px;
+    font-size: 20px; }
 
 * {
   margin: 0;
