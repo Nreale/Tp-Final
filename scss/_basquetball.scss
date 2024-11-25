@@ -3,7 +3,6 @@
 
 *{
     margin: 0;
-
     border: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -36,6 +35,12 @@
     overflow: hidden;
     transform: skew(5deg);
 }
+
+.carrusel{
+    height: 250px;
+    width: 250px;
+}
+
 
 .card{
     flex: 1;
@@ -90,17 +95,9 @@
     transform: rotate(0deg) skew(-5deg);
 }
 
-.carrusel {
-    height: 550px;
-    width: 800px;
+h1{
+    font-size: 10px;
     text-align: center;
-    margin-left: 400px; 
-}
-  
-  .carruselimg {
-    margin-right: 410px;
-    height: 800px;
-    margin-top: -50px; 
 }
 
 
