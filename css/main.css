@@ -581,15 +581,16 @@ body {
 
 .rutinas .rutinas-info .rutinas-info-img1 img {
   height: 100%;
-  transform: translateX(-300px) translateY(40px) rotate(45deg); }
+  transform: translateX(-300px) translateY(40px) rotate(0deg); }
 
 .rutinas .rutinas-info .rutinas-info-tituyparraf h2 {
   margin: 50px; }
 
 .rutinas .rutinas-instrucciones img, .rutinas .rutinas-instrucciones-2 img {
-  transform: translateX(-60px) translateY(40px) rotate(-50deg); }
+  transform: translateX(-60px) translateY(40px) rotate(20deg); }
 
 .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso {
+  height: 650px;
   background-color: #3e3ea1; }
   .rutinas .rutinas-instrucciones .rutinas-instrucciones-pasoapaso li, .rutinas .rutinas-instrucciones-2 .rutinas-instrucciones-pasoapaso li {
     margin: 0px 10px 0px 50px;
@@ -604,10 +605,10 @@ body {
       color: white; }
 
 .rutinas .rutinas-instrucciones-2 #img1 {
-  transform: translateX(-320px) translateY(40px) rotate(100deg); }
+  transform: translateX(-320px) translateY(40px) rotate(40deg); }
 
 .rutinas .rutinas-instrucciones-2 #img2 {
-  transform: translateX(-40px) translateY(90px) rotate(0deg); }
+  transform: translateX(-40px) translateY(90px) rotate(-70deg); }
 
 @media screen and (max-width: 1023px) {
   /*NUTRICION INFO PRINC*/
