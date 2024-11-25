@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../assets/imagenes/natP.png) no-repeat center center fixed;
+    background: url(../assets/imagenes/hockeyfondo.png) no-repeat center center fixed;
     background-size: cover;
     border-top: 1px solid #0e788d85;
 }
@@ -19,14 +19,157 @@
     align-items: center;
     backdrop-filter: blur(10px);
     margin: 50px 0px 30px 10px;
-    box-shadow: 1px 1px 5px 1px;
+    box-shadow: 1px 1px 5px 1px white;
     border-radius: 10px;
     text-align: center;
     h2{
       margin: 10px 0px 0px 0px;
+      color: white;
+      text-shadow: 2px 2px 2px black;
     }
     p{
         margin: 20px 20px 20px 20px;
         font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 2px black;
     }
 }
+
+/* Puntos de Actividad */
+
+.contFut-grande-mapaHo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px 0px 0px;
+    backdrop-filter: blur(50px) ;
+    
+    h1{
+        font-size: 30px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 0px 0px;
+    }
+    .lineaHo{
+        width: 30%;
+        height: 3px;
+        background-color: black;
+        border-radius: 50px;
+        margin-bottom: 30px;
+    }
+    .contfut-mapaHo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0px 0px 60px 0px;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+  
+  /*IMPORTANTE: TARJETA NUEVA SCSS*/
+
+  .contCardHo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 30px 0px 30px 0px;
+  }
+  .cardHo {
+    width: 350px;
+    height: 350px;
+    border: 2px solid rgba(235, 235, 235, 0.35);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    color: white;
+    background: rgba(187, 205, 189, 0.25);
+    transition: all 0.8s ease; // Transición más lenta
+    overflow: hidden;
+    height: auto;
+    max-height: 200px; // Altura inicial: solo imagen
+  
+    &:hover {
+      max-height: 500px; // Expande la tarjeta al pasar el mouse
+      background: rgba(187, 205, 189, 0.55);
+  
+      .texto {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); // Regresa a su posición original
+      }
+    }
+  
+    .containerHo {
+      position: relative;
+  
+      .texto {
+        padding: 1em;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px); // Añadir un efecto de desplazamiento
+        transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease; // Más lento
+  
+        .texto-explicativo {
+          margin-top: 0.5em;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+  }
+  
+/* Beneficios */
+.tarjeta {
+    display: flex;
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 450px; /* Ampliamos el ancho de la tarjeta */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Animación para la expansión */
+  
+    .tarjeta-imagen {
+      width: 150px;
+      object-fit: cover;
+    }
+  
+    .tarjeta-contenido {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+  
+      .tarjeta-titulo {
+        font-size: 1.25rem;
+        margin: 0;
+        transition: transform 0.3s ease-in-out; /* Animación para el título */
+      }
+  
+      .tarjeta-descripcion {
+        font-size: 0.875rem;
+        margin: 8px 0;
+        color: #ccc;
+      }
+    }
+  
+    &:hover {
+      transform: scale(1.05); /* Agrandar la tarjeta cuando se pasa el mouse */
+    }
+  
+    &:hover .tarjeta-contenido .tarjeta-titulo {
+      transform: translateY(-5px); /* El título se mueve ligeramente hacia arriba */
+    }
+  }
+  
